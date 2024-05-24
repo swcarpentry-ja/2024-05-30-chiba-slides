@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SWC @ 千葉大学",
-    "section": "",
-    "text": "ワークショップのウエブサイト\nUnixシェル"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -299,5 +292,12 @@
     "title": "SWC @ 千葉大学",
     "section": "rm -rでフォルダを削除",
     "text": "rm -rでフォルダを削除\n\ncpで-rを使用するのと同様に、フォルダを削除するには-rが必要です:\n\nrm -r thesis\n\n再度、注意！！"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SWC @ 千葉大学",
+    "section": "",
+    "text": "ワークショップのウエブサイト\nUnixシェル"
   }
 ]

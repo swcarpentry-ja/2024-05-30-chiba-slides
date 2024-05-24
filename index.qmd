@@ -1,0 +1,8 @@
+---
+title: "SWC @ 千葉大学"
+toc: false
+---
+
+- [ワークショップのウエブサイト](https://swcarpentry-ja.github.io/2024-05-30-chiba/)
+
+- [Unixシェル](shell/index.qmd)

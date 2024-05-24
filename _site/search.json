@@ -1,0 +1,303 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SWC @ 千葉大学",
+    "section": "",
+    "text": "ワークショップのウエブサイト\nUnixシェル"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "shell/index.html#データの準備",
+    "href": "shell/index.html#データの準備",
+    "title": "SWC @ 千葉大学",
+    "section": "データの準備",
+    "text": "データの準備\n\nshell-lesson-data.zipをダウンロードして、ファイルをデスクトップに移動してください。\nファイルを解凍します。デスクトップにshell-lesson-dataという新しいフォルダが作成されているはずです。"
+  },
+  {
+    "objectID": "shell/index.html#新しいシェルを開く",
+    "href": "shell/index.html#新しいシェルを開く",
+    "title": "SWC @ 千葉大学",
+    "section": "新しいシェルを開く",
+    "text": "新しいシェルを開く\nオペレーティングシステム別の指示については、シェルレッスンを参照してください。"
+  },
+  {
+    "objectID": "shell/index.html#人間とコンピュータの相互作用",
+    "href": "shell/index.html#人間とコンピュータの相互作用",
+    "title": "SWC @ 千葉大学",
+    "section": "人間とコンピュータの相互作用",
+    "text": "人間とコンピュータの相互作用\n\n人間はGUI（グラフィカルユーザインターフェース）またはCLI（コマンドラインインターフェース）を使ってコンピュータと対話します。\nGUI: 直感的でメニュー駆動型ですが、反復作業には効率的ではありません。\nCLI（Unixシェル）: 反復作業に効率的で、タスクを迅速に自動化できます。"
+  },
+  {
+    "objectID": "shell/index.html#シェルの紹介-1",
+    "href": "shell/index.html#シェルの紹介-1",
+    "title": "SWC @ 千葉大学",
+    "section": "シェルの紹介",
+    "text": "シェルの紹介\n\nシェルはユーザーが入力したコマンドを解釈して実行します。\n人気のあるUnixシェル: Bash（Bourne Again SHell）。\nシェルを使用する利点:\n\n反復作業を自動化\n強力なパイプラインで効率的なデータ処理\nリモートマシンとのやり取りや高性能コンピューティングに不可欠"
+  },
+  {
+    "objectID": "shell/index.html#シェルインターフェース",
+    "href": "shell/index.html#シェルインターフェース",
+    "title": "SWC @ 千葉大学",
+    "section": "シェルインターフェース",
+    "text": "シェルインターフェース\nシェルを開くと、次のようなものが表示されます:\n$"
+  },
+  {
+    "objectID": "shell/index.html#シェルインターフェース-1",
+    "href": "shell/index.html#シェルインターフェース-1",
+    "title": "SWC @ 千葉大学",
+    "section": "シェルインターフェース",
+    "text": "シェルインターフェース\n\n$はプロンプトで、ここにコマンドを入力します\nセットアップによっては、次のように少し異なる場合があります:\n\nnelle@localhost $"
+  },
+  {
+    "objectID": "shell/index.html#ls",
+    "href": "shell/index.html#ls",
+    "title": "SWC @ 千葉大学",
+    "section": "ls",
+    "text": "ls\n最初に学ぶコマンドはlsで、現在のディレクトリの内容を一覧表示します（後で戻ってきます）:\nls\nDesktop     Downloads   Movies      Pictures\nDocuments   Library     Music       Public"
+  },
+  {
+    "objectID": "shell/index.html#nelleのパイプライン",
+    "href": "shell/index.html#nelleのパイプライン",
+    "title": "SWC @ 千葉大学",
+    "section": "Nelleのパイプライン",
+    "text": "Nelleのパイプライン\n\nサンプルデータセットは”Nelle Nemo”のストーリーに基づいています\n文脈: Nelle Nemoは海洋生物学者で、海洋生物をサンプリングしています。\nNelleのタスク: goostats.shを使って1520のサンプルのタンパク質量を測定します。\n課題: GUIを使用する場合、Nelleは1520のファイルを手動で実行する必要があり、12時間以上かかります。Nelleはシェルを使ってこれをより効率的に行うことができるでしょうか？"
+  },
+  {
+    "objectID": "shell/index.html#質問",
+    "href": "shell/index.html#質問",
+    "title": "SWC @ 千葉大学",
+    "section": "質問",
+    "text": "質問\n\nコンピュータ上でどのように移動できますか？\nどのようにファイルやディレクトリを確認できますか？\nコンピュータ上のファイルやディレクトリの場所をどのように指定できますか？"
+  },
+  {
+    "objectID": "shell/index.html#ファイルシステムとは",
+    "href": "shell/index.html#ファイルシステムとは",
+    "title": "SWC @ 千葉大学",
+    "section": "ファイルシステムとは？",
+    "text": "ファイルシステムとは？\n\nファイルシステム: ファイルとディレクトリを管理します。\n\nファイル: 情報（データ）を保持します。\nディレクトリ（= フォルダ）: ファイルまたは他のディレクトリを保持します。"
+  },
+  {
+    "objectID": "shell/index.html#現在地は",
+    "href": "shell/index.html#現在地は",
+    "title": "SWC @ 千葉大学",
+    "section": "現在地は？",
+    "text": "現在地は？\npwdを使用して、現在の作業ディレクトリ（コンピュータ上の「居場所」）を表示します。"
+  },
+  {
+    "objectID": "shell/index.html#スラッシュ",
+    "href": "shell/index.html#スラッシュ",
+    "title": "SWC @ 千葉大学",
+    "section": "スラッシュ",
+    "text": "スラッシュ\n\n/文字には2つの意味があります。\n\nファイルやディレクトリ名の先頭に現れると、ルートディレクトリを指します。\nパスの内部に現れると、単なる区切りです。"
+  },
+  {
+    "objectID": "shell/index.html#lsでファイルを一覧表示",
+    "href": "shell/index.html#lsでファイルを一覧表示",
+    "title": "SWC @ 千葉大学",
+    "section": "lsでファイルを一覧表示",
+    "text": "lsでファイルを一覧表示\n\n-Fオプションを使用して出力を調整します:\n\n末尾の/はディレクトリを示します\n@はリンクを示します\n*は実行可能ファイルを示します\n\n\nls -F"
+  },
+  {
+    "objectID": "shell/index.html#ターミナルをクリア",
+    "href": "shell/index.html#ターミナルをクリア",
+    "title": "SWC @ 千葉大学",
+    "section": "ターミナルをクリア",
+    "text": "ターミナルをクリア\nclearを使って散らかったターミナルをクリアできます（全ての出力を消します）"
+  },
+  {
+    "objectID": "shell/index.html#ヘルプ",
+    "href": "shell/index.html#ヘルプ",
+    "title": "SWC @ 千葉大学",
+    "section": "ヘルプ",
+    "text": "ヘルプ\n--helpを追加してヘルプメニューを表示します:\nls --help"
+  },
+  {
+    "objectID": "shell/index.html#ヘルプ-1",
+    "href": "shell/index.html#ヘルプ-1",
+    "title": "SWC @ 千葉大学",
+    "section": "ヘルプ",
+    "text": "ヘルプ\nまたは、コマンドの前にmanを追加します:\nman ls"
+  },
+  {
+    "objectID": "shell/index.html#チャレンジ-ls",
+    "href": "shell/index.html#チャレンジ-ls",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ: ls",
+    "text": "チャレンジ: ls\n\npwdが/Users/backupを表示し、-rがlsに逆順で表示するよう指示する場合、次の出力を得るにはどのコマンドを使用しますか:\npnas_sub/ pnas_final/ original/\n\nls pwd\nls -r -F\nls -r -F /Users/backup"
+  },
+  {
+    "objectID": "shell/index.html#他のディレクトリの探索",
+    "href": "shell/index.html#他のディレクトリの探索",
+    "title": "SWC @ 千葉大学",
+    "section": "他のディレクトリの探索",
+    "text": "他のディレクトリの探索\nls -F Desktop"
+  },
+  {
+    "objectID": "shell/index.html#cdで他のディレクトリに移動",
+    "href": "shell/index.html#cdで他のディレクトリに移動",
+    "title": "SWC @ 千葉大学",
+    "section": "cdで他のディレクトリに移動",
+    "text": "cdで他のディレクトリに移動\ncd Desktop\ncd shell-lesson-data\ncd exercise-data"
+  },
+  {
+    "objectID": "shell/index.html#移動のショートカット-..",
+    "href": "shell/index.html#移動のショートカット-..",
+    "title": "SWC @ 千葉大学",
+    "section": "移動のショートカット: ..",
+    "text": "移動のショートカット: ..\n..は一つ上のディレクトリに移動します\ncd .."
+  },
+  {
+    "objectID": "shell/index.html#移動のショートカット-..-1",
+    "href": "shell/index.html#移動のショートカット-..-1",
+    "title": "SWC @ 千葉大学",
+    "section": "移動のショートカット: ..",
+    "text": "移動のショートカット: ..\nls -aを使ってすべてを表示すると、..が見えることに注意してください"
+  },
+  {
+    "objectID": "shell/index.html#移動のショートカット",
+    "href": "shell/index.html#移動のショートカット",
+    "title": "SWC @ 千葉大学",
+    "section": "移動のショートカット: ~",
+    "text": "移動のショートカット: ~\n~を使ってホームディレクトリに移動できます"
+  },
+  {
+    "objectID": "shell/index.html#移動のショートカット--",
+    "href": "shell/index.html#移動のショートカット--",
+    "title": "SWC @ 千葉大学",
+    "section": "移動のショートカット: -",
+    "text": "移動のショートカット: -\n-を使って直前のディレクトリに戻ることができます"
+  },
+  {
+    "objectID": "shell/index.html#絶対パスと相対パス",
+    "href": "shell/index.html#絶対パスと相対パス",
+    "title": "SWC @ 千葉大学",
+    "section": "絶対パスと相対パス",
+    "text": "絶対パスと相対パス\n\n/で始まらないパスを入力すると、現在の場所に相対的なフォルダやファイルを指します\n/で始まるパスを入力すると、ファイルシステムのルートからのパスを指します"
+  },
+  {
+    "objectID": "shell/index.html#チャレンジ-相対パス",
+    "href": "shell/index.html#チャレンジ-相対パス",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ: 相対パス",
+    "text": "チャレンジ: 相対パス\n\npwdが/Users/thingを表示している場合、ls -F ../backupは何を表示しますか？\n\n../backup: No such file or directory\n2012-12-01 2013-01-08 2013-01-27\n2012-12-01/ 2013-01-08/ 2013-01-27/\noriginal/ pnas_final/ pnas_sub/"
+  },
+  {
+    "objectID": "shell/index.html#シェルコマンドの一般的な構文",
+    "href": "shell/index.html#シェルコマンドの一般的な構文",
+    "title": "SWC @ 千葉大学",
+    "section": "シェルコマンドの一般的な構文",
+    "text": "シェルコマンドの一般的な構文"
+  },
+  {
+    "objectID": "shell/index.html#シェルコマンドの一般的な構文-1",
+    "href": "shell/index.html#シェルコマンドの一般的な構文-1",
+    "title": "SWC @ 千葉大学",
+    "section": "シェルコマンドの一般的な構文",
+    "text": "シェルコマンドの一般的な構文\n\nオプションは通常2つの方法で書くことができます:\n\nロングフォーム--（ls --all）\nショートフォーム-（ls -a）\n\nスペースは重要です（ls-Fはコマンド”ls-F”を意味します）\n大文字と小文字は区別されます（ls -sとls -S）"
+  },
+  {
+    "objectID": "shell/index.html#タブ補完",
+    "href": "shell/index.html#タブ補完",
+    "title": "SWC @ 千葉大学",
+    "section": "タブ補完",
+    "text": "タブ補完\nシェルはタブキーを押すとファイルやフォルダの名前を自動で入力してくれます\n`~/\nDesktop/shell-lesson-data/`から試してみてください\nls north-pacific-gyre/\nls north-pacific-gyre/goo"
+  },
+  {
+    "objectID": "shell/index.html#質問-1",
+    "href": "shell/index.html#質問-1",
+    "title": "SWC @ 千葉大学",
+    "section": "質問",
+    "text": "質問\n\nどのようにファイルやディレクトリを作成、コピー、削除できますか？\nどのようにファイルを編集できますか？"
+  },
+  {
+    "objectID": "shell/index.html#mkdirで新しいディレクトリを作成",
+    "href": "shell/index.html#mkdirで新しいディレクトリを作成",
+    "title": "SWC @ 千葉大学",
+    "section": "mkdirで新しいディレクトリを作成",
+    "text": "mkdirで新しいディレクトリを作成\n\nshell-lesson-dataにいることを確認し、その後exercise-data/writingに入ります\n周りを見てから、thesisという新しいディレクトリを作成します:\n\nmkdir thesis"
+  },
+  {
+    "objectID": "shell/index.html#mkdirで新しいディレクトリを作成-1",
+    "href": "shell/index.html#mkdirで新しいディレクトリを作成-1",
+    "title": "SWC @ 千葉大学",
+    "section": "mkdirで新しいディレクトリを作成",
+    "text": "mkdirで新しいディレクトリを作成\n-pを使用してネストされたディレクトリを作成できます\nmkdir -p ../project/data ../project/results\n実行した内容を確認します（-Rオプションを使うと、ディレクトリ内のすべてのネストされたサブディレクトリを一覧表示します）:\nls -FR ../project"
+  },
+  {
+    "objectID": "shell/index.html#ベストプラクティス-ファイルとディレクトリの名前",
+    "href": "shell/index.html#ベストプラクティス-ファイルとディレクトリの名前",
+    "title": "SWC @ 千葉大学",
+    "section": "ベストプラクティス: ファイルとディレクトリの名前",
+    "text": "ベストプラクティス: ファイルとディレクトリの名前\n\nスペースを使用しないでください。\n名前の先頭に-（ダッシュ）を使用しないでください。\n文字、数字、.（ピリオド）、-（ダッシュ）、_（アンダースコア）を使用します。"
+  },
+  {
+    "objectID": "shell/index.html#テキストファイルを作成",
+    "href": "shell/index.html#テキストファイルを作成",
+    "title": "SWC @ 千葉大学",
+    "section": "テキストファイルを作成",
+    "text": "テキストファイルを作成\nnanoはテキストエディタプログラムです。ファイルを作成し、編集のために開きます。\ncd thesis\nnano draft.txt"
+  },
+  {
+    "objectID": "shell/index.html#touchでテキストファイルを作成",
+    "href": "shell/index.html#touchでテキストファイルを作成",
+    "title": "SWC @ 千葉大学",
+    "section": "touchでテキストファイルを作成",
+    "text": "touchでテキストファイルを作成\ntouch my_file.txt"
+  },
+  {
+    "objectID": "shell/index.html#rmでファイルを削除",
+    "href": "shell/index.html#rmでファイルを削除",
+    "title": "SWC @ 千葉大学",
+    "section": "rmでファイルを削除",
+    "text": "rmでファイルを削除\nrm my_file.txt\n\nrmは完全に削除します！（ゴミ箱はありません）。使用する際は非常に注意してください。"
+  },
+  {
+    "objectID": "shell/index.html#mvでファイルやフォルダを移動または名前変更",
+    "href": "shell/index.html#mvでファイルやフォルダを移動または名前変更",
+    "title": "SWC @ 千葉大学",
+    "section": "mvでファイルやフォルダを移動または名前変更",
+    "text": "mvでファイルやフォルダを移動または名前変更\nshell-lesson-data/exercise-data/writingに入ります:\ncd ~/Desktop/shell-lesson-data/exercise-data/writing\ndraft.txtの名前を変更します:\nmv thesis/draft.txt thesis/quotes.txt\n（lsで結果を確認します）"
+  },
+  {
+    "objectID": "shell/index.html#mvでファイルやフォルダを移動または名前変更-1",
+    "href": "shell/index.html#mvでファイルやフォルダを移動または名前変更-1",
+    "title": "SWC @ 千葉大学",
+    "section": "mvでファイルやフォルダを移動または名前変更",
+    "text": "mvでファイルやフォルダを移動または名前変更\n\nrmと同様に、mvには「元に戻す」ボタンはありません: 同じ名前のファイルを上書きするので、慎重に使用してください！\n\nquotes.txtを現在のディレクトリに移動します:\nmv thesis/quotes.txt .\nls thesisを確認します"
+  },
+  {
+    "objectID": "shell/index.html#cpでファイルやフォルダをコピー",
+    "href": "shell/index.html#cpでファイルやフォルダをコピー",
+    "title": "SWC @ 千葉大学",
+    "section": "cpでファイルやフォルダをコピー",
+    "text": "cpでファイルやフォルダをコピー\n\ncpはmvに似ていますが、移動の代わりにコピーします\n\ncp quotes.txt thesis/quotations.txt\nls quotes.txt thesis/quotations.txt"
+  },
+  {
+    "objectID": "shell/index.html#cpでファイルやフォルダをコピー-1",
+    "href": "shell/index.html#cpでファイルやフォルダをコピー-1",
+    "title": "SWC @ 千葉大学",
+    "section": "cpでファイルやフォルダをコピー",
+    "text": "cpでファイルやフォルダをコピー\n\nフォルダをそのままcpすることはできません:\n\ncp thesis thesis_backup\ncp: thesis is a directory (not copied)."
+  },
+  {
+    "objectID": "shell/index.html#cpでファイルやフォルダをコピー-2",
+    "href": "shell/index.html#cpでファイルやフォルダをコピー-2",
+    "title": "SWC @ 千葉大学",
+    "section": "cpでファイルやフォルダをコピー",
+    "text": "cpでファイルやフォルダをコピー\n\nフォルダとその内容をすべてコピーするには、-r（recursive）オプションを使用します\n\ncp -r thesis thesis_backup"
+  },
+  {
+    "objectID": "shell/index.html#rm--rでフォルダを削除",
+    "href": "shell/index.html#rm--rでフォルダを削除",
+    "title": "SWC @ 千葉大学",
+    "section": "rm -rでフォルダを削除",
+    "text": "rm -rでフォルダを削除\n\ncpで-rを使用するのと同様に、フォルダを削除するには-rが必要です:\n\nrm -r thesis\n\n再度、注意！！"
+  }
+]

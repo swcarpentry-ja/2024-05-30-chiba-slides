@@ -110,11 +110,9 @@ FIXME
 
 - 無料か少額
 
-- レッスン前後にアンケートを実施
+- ワークショップを教えるのに[資格](https://carpentries.org/become-instructor/)が必要
 
 - 改善のためのフィードバックは重視されている
-
-- 世界（ほぼ）各国で実施
 
 <img src="https://software-carpentry.org/files/workshops/mit-2013-slice.jpg" alt="drawing" height="150"/>
 
@@ -141,9 +139,11 @@ FIXME
 
 ## 内容
 
-- ３０日：Shell、Git
+- ３０日：[Shell](https://swcarpentry-ja.github.io/shell-novice)、[Git](https://swcarpentry-ja.github.io/git-novice)
 
-- ３１日：Docker
+- ３１日：[Docker](https://carpentries-incubator.github.io/docker-introduction)
+
+上記のリンクからレッスンの内容にアクセスできます（翻訳がまだ完了していない部分があります）
 
 ## SWCワークショップの流れ
 
@@ -180,7 +180,6 @@ FIXME
 :::
 :::
 
-
 ---
 
 <br><br>
@@ -189,7 +188,7 @@ FIXME
 
 ## コラボレイティブ・ノート
 
-[HackMD]()にコードを貼っておきます。 FIXME
+[HackMD](https://hackmd.io/@swcarpentry-ja/rkXVzlJV0)にコードを貼っておきます。
 
 - もしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照してください。
   - 参加者も自由に書き込んでいいです

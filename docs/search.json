@@ -354,7 +354,7 @@
     "href": "swc-intro/index.html#ワークショップ",
     "title": "SWC @ 千葉大学",
     "section": "ワークショップ",
-    "text": "ワークショップ\n\n誰でも参加できる\n無料か少額\nレッスン前後にアンケートを実施\n改善のためのフィードバックは重視されている\n世界（ほぼ）各国で実施"
+    "text": "ワークショップ\n\n誰でも参加できる\n無料か少額\nワークショップを教えるのに資格が必要\n改善のためのフィードバックは重視されている"
   },
   {
     "objectID": "swc-intro/index.html#workshops-in-51-countries-since-2012",
@@ -382,7 +382,7 @@
     "href": "swc-intro/index.html#内容",
     "title": "SWC @ 千葉大学",
     "section": "内容",
-    "text": "内容\n\n３０日：Shell、Git\n３１日：Docker"
+    "text": "内容\n\n３０日：Shell、Git\n３１日：Docker\n\n上記のリンクからレッスンの内容にアクセスできます（翻訳がまだ完了していない部分があります）"
   },
   {
     "objectID": "swc-intro/index.html#swcワークショップの流れ",
@@ -417,7 +417,7 @@
     "href": "swc-intro/index.html#コラボレイティブノート",
     "title": "SWC @ 千葉大学",
     "section": "コラボレイティブ・ノート",
-    "text": "コラボレイティブ・ノート\nHackMDにコードを貼っておきます。 FIXME\n\nもしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照してください。\n\n参加者も自由に書き込んでいいです"
+    "text": "コラボレイティブ・ノート\nHackMDにコードを貼っておきます。\n\nもしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照してください。\n\n参加者も自由に書き込んでいいです"
   },
   {
     "objectID": "swc-intro/index.html#フィードバックの種類",

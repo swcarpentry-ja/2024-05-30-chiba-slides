@@ -298,6 +298,174 @@
     "href": "index.html",
     "title": "SWC @ 千葉大学",
     "section": "",
-    "text": "ワークショップのウエブサイト\nUnixシェル"
+    "text": "ワークショップのウエブサイト\nソフトウェアカーペントリーの紹介\nUnixシェル"
+  },
+  {
+    "objectID": "swc-intro/index.html#ニッタ-ジョエルインストラクター",
+    "href": "swc-intro/index.html#ニッタ-ジョエルインストラクター",
+    "title": "SWC @ 千葉大学",
+    "section": "ニッタ ジョエル（インストラクター）",
+    "text": "ニッタ ジョエル（インストラクター）\n\n\n@joelnitta\n\n千葉大学の准教授\n研究テーマ：シダ植物の進化、生態学、ゲノム解析\n趣味：ジョギング"
+  },
+  {
+    "objectID": "swc-intro/index.html#西田-孝三インストラクター",
+    "href": "swc-intro/index.html#西田-孝三インストラクター",
+    "title": "SWC @ 千葉大学",
+    "section": "西田 孝三（インストラクター）",
+    "text": "西田 孝三（インストラクター）\n\n\n\n技術員\n理化学研究所 生命機能科学研究センター\n研究テーマ：パスウェイ関連データの統合・可視化・解析\n趣味：オープンサイエンスコミュニティの運営"
+  },
+  {
+    "objectID": "swc-intro/index.html#大田-達郎ヘルパー",
+    "href": "swc-intro/index.html#大田-達郎ヘルパー",
+    "title": "SWC @ 千葉大学",
+    "section": "大田 達郎（ヘルパー）",
+    "text": "大田 達郎（ヘルパー）\nFIXME"
+  },
+  {
+    "objectID": "swc-intro/index.html#露崎-弘毅ヘルパー",
+    "href": "swc-intro/index.html#露崎-弘毅ヘルパー",
+    "title": "SWC @ 千葉大学",
+    "section": "露崎 弘毅（ヘルパー）",
+    "text": "露崎 弘毅（ヘルパー）\nFIXME"
+  },
+  {
+    "objectID": "swc-intro/index.html#行動規範",
+    "href": "swc-intro/index.html#行動規範",
+    "title": "SWC @ 千葉大学",
+    "section": "行動規範",
+    "text": "行動規範\nどなたでも気兼ねなくワークショップに参加できるように、行動規範があります。\n行動規範に反する行為があった場合は、インシデントレポートフォームで報告することができます。"
+  },
+  {
+    "objectID": "swc-intro/index.html#問題",
+    "href": "swc-intro/index.html#問題",
+    "title": "SWC @ 千葉大学",
+    "section": "問題",
+    "text": "問題\n\n\n\n研究者は最近コードを使えざるを得ない\nほとんどは独学で覚えている\nが、効率はあまり高くない"
+  },
+  {
+    "objectID": "swc-intro/index.html#swcの解決法-swcs-solution",
+    "href": "swc-intro/index.html#swcの解決法-swcs-solution",
+    "title": "SWC @ 千葉大学",
+    "section": "SWCの解決法 SWC’s solution",
+    "text": "SWCの解決法 SWC’s solution\n\n\n\n研究者がコミュニティを作って、互いに教え合う\n二日間にわたるワークショップ\n３−４レッスンを教える"
+  },
+  {
+    "objectID": "swc-intro/index.html#ワークショップ",
+    "href": "swc-intro/index.html#ワークショップ",
+    "title": "SWC @ 千葉大学",
+    "section": "ワークショップ",
+    "text": "ワークショップ\n\n誰でも参加できる\n無料か少額\nレッスン前後にアンケートを実施\n改善のためのフィードバックは重視されている\n世界（ほぼ）各国で実施"
+  },
+  {
+    "objectID": "swc-intro/index.html#workshops-in-51-countries-since-2012",
+    "href": "swc-intro/index.html#workshops-in-51-countries-since-2012",
+    "title": "SWC @ 千葉大学",
+    "section": "1622 workshops in 51 countries since 2012",
+    "text": "1622 workshops in 51 countries since 2012"
+  },
+  {
+    "objectID": "swc-intro/index.html#日本ではまだ始まったばかり",
+    "href": "swc-intro/index.html#日本ではまだ始まったばかり",
+    "title": "SWC @ 千葉大学",
+    "section": "日本ではまだ始まったばかり",
+    "text": "日本ではまだ始まったばかり\n\n今回が初対面日本語ワークショップ\n\nこれから増やす予定\n\n翻訳活動も行っています"
+  },
+  {
+    "objectID": "swc-intro/index.html#参加者大募集中",
+    "href": "swc-intro/index.html#参加者大募集中",
+    "title": "SWC @ 千葉大学",
+    "section": "参加者大募集中!",
+    "text": "参加者大募集中!\n\nSlack\n\nhttps://slack-invite.carpentries.org/から Slack に参加後、 #local-japan チャンネルに入ってください\n\nGitHub: https://swcarpentry-ja.github.io/"
+  },
+  {
+    "objectID": "swc-intro/index.html#内容",
+    "href": "swc-intro/index.html#内容",
+    "title": "SWC @ 千葉大学",
+    "section": "内容",
+    "text": "内容\n\n３０日：Shell、Git\n３１日：Docker"
+  },
+  {
+    "objectID": "swc-intro/index.html#swcワークショップの流れ",
+    "href": "swc-intro/index.html#swcワークショップの流れ",
+    "title": "SWC @ 千葉大学",
+    "section": "SWCワークショップの流れ",
+    "text": "SWCワークショップの流れ\n\n（軽い）スライドによる内容の説明\nライブコーディング"
+  },
+  {
+    "objectID": "swc-intro/index.html#ライブコーディングとは",
+    "href": "swc-intro/index.html#ライブコーディングとは",
+    "title": "SWC @ 千葉大学",
+    "section": "ライブコーディングとは？",
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターが打っていると同じコードを同時に自分のパソコンで打っていく\nそのコードを理解することを最も優先してください（メモをとるなどよりも）"
+  },
+  {
+    "objectID": "swc-intro/index.html#ライブコーディングとは-1",
+    "href": "swc-intro/index.html#ライブコーディングとは-1",
+    "title": "SWC @ 千葉大学",
+    "section": "ライブコーディングとは？",
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターが参加者の理解を確認する（「〜が出来ましたか？」）\nうまく出来ていれば、緑付箋をラップトップにつける\n何か困っているときは、赤付箋をラップトップにつける\n\nヘルパーが助けに行く"
+  },
+  {
+    "objectID": "swc-intro/index.html#ライブコーディングとは-2",
+    "href": "swc-intro/index.html#ライブコーディングとは-2",
+    "title": "SWC @ 千葉大学",
+    "section": "ライブコーディングとは？",
+    "text": "ライブコーディングとは？\n\nインストラクターが聞かなくても、何か問題があった時に声をかけてください"
+  },
+  {
+    "objectID": "swc-intro/index.html#コラボレイティブノート",
+    "href": "swc-intro/index.html#コラボレイティブノート",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレイティブ・ノート",
+    "text": "コラボレイティブ・ノート\nHackMDにコードを貼っておきます。 FIXME\n\nもしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照してください。\n\n参加者も自由に書き込んでいいです"
+  },
+  {
+    "objectID": "swc-intro/index.html#フィードバックの種類",
+    "href": "swc-intro/index.html#フィードバックの種類",
+    "title": "SWC @ 千葉大学",
+    "section": "フィードバックの種類",
+    "text": "フィードバックの種類\n\n感想（１日の終わりに付箋に書いていただく）\nワークショップ前後のアンケート"
+  },
+  {
+    "objectID": "swc-intro/index.html#隣の方に自己紹介しましょう",
+    "href": "swc-intro/index.html#隣の方に自己紹介しましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "隣の方に自己紹介しましょう",
+    "text": "隣の方に自己紹介しましょう\n\n研究テーマは何ですか？\n趣味は何ですか？"
+  },
+  {
+    "objectID": "swc-intro/index.html#workshops-in-55-countries-since-2012",
+    "href": "swc-intro/index.html#workshops-in-55-countries-since-2012",
+    "title": "SWC @ 千葉大学",
+    "section": "2164 workshops in 55 countries since 2012",
+    "text": "2164 workshops in 55 countries since 2012"
+  },
+  {
+    "objectID": "swc-intro/index.html#ニッタ-ジョエル-インストラクター",
+    "href": "swc-intro/index.html#ニッタ-ジョエル-インストラクター",
+    "title": "SWC @ 千葉大学",
+    "section": "ニッタ ジョエル（インストラクター）",
+    "text": "ニッタ ジョエル（インストラクター）\n\n\n@joelnitta\n\n千葉大学の准教授\n研究テーマ：シダ植物の進化、生態学、ゲノム解析\n趣味：ジョギング"
+  },
+  {
+    "objectID": "swc-intro/index.html#年以来55ヵ国で2164ワークショップを実施",
+    "href": "swc-intro/index.html#年以来55ヵ国で2164ワークショップを実施",
+    "title": "SWC @ 千葉大学",
+    "section": "2012年以来、55ヵ国で2,164ワークショップを実施",
+    "text": "2012年以来、55ヵ国で2,164ワークショップを実施"
+  },
+  {
+    "objectID": "swc-intro/index.html#年以来55ヵ国で-2164ワークショップを実施",
+    "href": "swc-intro/index.html#年以来55ヵ国で-2164ワークショップを実施",
+    "title": "SWC @ 千葉大学",
+    "section": "2012年以来、55ヵ国で2,164ワークショップを実施",
+    "text": "2012年以来、55ヵ国で2,164ワークショップを実施"
+  },
+  {
+    "objectID": "swc-intro/index.html#swcの解決法",
+    "href": "swc-intro/index.html#swcの解決法",
+    "title": "SWC @ 千葉大学",
+    "section": "SWCの解決法",
+    "text": "SWCの解決法\n\n\n\n研究者がコミュニティを作って、互いに教え合う\n二日間にわたるワークショップ\n３−４レッスンを教える"
   }
 ]

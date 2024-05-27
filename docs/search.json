@@ -467,5 +467,96 @@
     "title": "SWC @ 千葉大学",
     "section": "SWCの解決法",
     "text": "SWCの解決法\n\n\n\n研究者がコミュニティを作って、互いに教え合う\n二日間にわたるワークショップ\n３−４レッスンを教える"
+  },
+  {
+    "objectID": "git/index.html#認証の設定",
+    "href": "git/index.html#認証の設定",
+    "title": "SWC @ 千葉大学",
+    "section": "認証の設定",
+    "text": "認証の設定\n\nリモートリポジトリに接続する前に、自分のコンピュータが GitHub に認証される方法を設定する必要があります。\nこれにより、GitHub はあなたのコンピュータからのアクセスを信頼できるようになります。"
+  },
+  {
+    "objectID": "git/index.html#ssh-プロトコルとは",
+    "href": "git/index.html#ssh-プロトコルとは",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH プロトコルとは？",
+    "text": "SSH プロトコルとは？\n\nコマンドラインでのアクセスを認証するために一般的に使用される方法を設定します。\nこの方法は「Secure Shell Protocol（SSH）」と呼ばれます。\nSSH は、暗号化されたネットワークプロトコルで、通常は安全でないネットワークを使用してコンピュータ間の安全な通信を可能にします。"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵ペアの仕組み",
+    "href": "git/index.html#ssh-鍵ペアの仕組み",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵ペアの仕組み",
+    "text": "SSH 鍵ペアの仕組み\n\nSSH は「鍵ペア」を使用します。\n鍵ペアはアクセスを検証するために連携して動作する2つの鍵です。\n一つは公開鍵（public key）、もう一つは秘密鍵（private key）と呼ばれます。"
+  },
+  {
+    "objectID": "git/index.html#公開鍵と秘密鍵の例え",
+    "href": "git/index.html#公開鍵と秘密鍵の例え",
+    "title": "SWC @ 千葉大学",
+    "section": "公開鍵と秘密鍵の例え",
+    "text": "公開鍵と秘密鍵の例え\n\n公開鍵を南京錠と考えてください。\n秘密鍵はその南京錠を開ける鍵です。\n公開鍵を GitHub アカウントに設定し、「この南京錠で通信をロックしてください」とします。\nこれにより、秘密鍵を持つコンピュータだけが通信を解読し、Git コマンドを GitHub アカウントとして送信できます。"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵の存在を確認する",
+    "href": "git/index.html#ssh-鍵の存在を確認する",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵の存在を確認する",
+    "text": "SSH 鍵の存在を確認する\nls -al ~/.ssh"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵の作成",
+    "href": "git/index.html#ssh-鍵の作成",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵の作成",
+    "text": "SSH 鍵の作成\nssh-keygen -t ed25519 -C \"vlad@tran.sylvan.ia\"\nvlad@tran.sylvan.iaには、自分のメールアドレスを入力してください（公開されているGitHubリポジトリを使用する場合、このメールアドレスも公開されることになります）"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵の作成-1",
+    "href": "git/index.html#ssh-鍵の作成-1",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵の作成",
+    "text": "SSH 鍵の作成\nGenerating public/private ed25519 key pair.\nEnter file in which to save the key (/c/Users/Vlad Dracula/.ssh/id_ed25519):\nデフォルト設定で良いので、リターンキーを押します。"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵の作成-2",
+    "href": "git/index.html#ssh-鍵の作成-2",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵の作成",
+    "text": "SSH 鍵の作成\nCreated directory '/c/Users/Vlad Dracula/.ssh'.\nEnter passphrase (empty for no passphrase):\nパスワードを設定します（空欄にすると、パスワードなしになります）。パスワードを設定すると、GitHubを使用するたびに入力が必要になります。"
+  },
+  {
+    "objectID": "git/index.html#公開鍵をgithubに置く",
+    "href": "git/index.html#公開鍵をgithubに置く",
+    "title": "SWC @ 千葉大学",
+    "section": "公開鍵をGitHubに置く",
+    "text": "公開鍵をGitHubに置く\ncat ~/.ssh/id_ed25519.pub\n\n右上隅にあるプロファイルの画像をクリックし、次に[設定]をクリックします。\nサイドバーの [アクセス] セクションで、 [ SSH キーと GPG キー] をクリックします\nNew SSH key または Add SSH key をクリックします\n公開鍵をペストし、覚えやすい名前を設定します"
+  },
+  {
+    "objectID": "git/index.html#sshでログイン",
+    "href": "git/index.html#sshでログイン",
+    "title": "SWC @ 千葉大学",
+    "section": "SSHでログイン",
+    "text": "SSHでログイン\nssh -T git@github.com"
+  },
+  {
+    "objectID": "git/index.html#リモートリポジトリを作成する",
+    "href": "git/index.html#リモートリポジトリを作成する",
+    "title": "SWC @ 千葉大学",
+    "section": "リモートリポジトリを作成する",
+    "text": "リモートリポジトリを作成する"
+  },
+  {
+    "objectID": "git/index.html#リモートリポジトリを追加する",
+    "href": "git/index.html#リモートリポジトリを追加する",
+    "title": "SWC @ 千葉大学",
+    "section": "リモートリポジトリを追加する",
+    "text": "リモートリポジトリを追加する\ngit remote add originでリポジトリを追加する\ngit remote add origin git@github.com:vlad/planets.git\ngit remote -vで確認する\ngit remote -v"
+  },
+  {
+    "objectID": "git/index.html#リモートリポジトリに変更をプッシュする",
+    "href": "git/index.html#リモートリポジトリに変更をプッシュする",
+    "title": "SWC @ 千葉大学",
+    "section": "リモートリポジトリに変更をプッシュする",
+    "text": "リモートリポジトリに変更をプッシュする\ngit push origin main"
   }
 ]

@@ -133,13 +133,6 @@
     "text": "ワークショップのウエブサイト\nソフトウェアカーペントリーの紹介\nUnixシェル"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "git/index.html#認証の設定",
     "href": "git/index.html#認証の設定",
     "title": "SWC @ 千葉大学",
@@ -299,6 +292,20 @@
     "title": "SWC @ 千葉大学",
     "section": "もう一回しましょう",
     "text": "もう一回しましょう\n\n今度は役割を交代して、もう一度やってみましょう"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "docker/index.html#docker-hubでコンテナを探す",
+    "href": "docker/index.html#docker-hubでコンテナを探す",
+    "title": "SWC @ 千葉大学",
+    "section": "Docker Hubでコンテナを探す",
+    "text": "Docker Hubでコンテナを探す\n\nDocker Hub（&lt;&gt;）とは、様々なイメージのダウンロードが出来るウエブサイト\nGit・GitHubと同じように、DockerはDocker Hub無しでも使える"
   },
   {
     "objectID": "shell/index.html#データの準備",

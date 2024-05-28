@@ -1,0 +1,21 @@
+---
+format:
+  revealjs:
+    incremental: false
+    css: ../styles.css
+execute: 
+  echo: true
+---
+
+# Docker
+
+[SWC @ 千葉大学](https://swcarpentry-ja.github.io/2024-05-30-chiba/)
+
+<https://swcarpentry-ja.github.io/2024-05-30-chiba/docker>
+
+## Docker Hubでコンテナを探す
+
+- Docker Hub（<>）とは、様々なイメージのダウンロードが出来るウエブサイト
+
+- Git・GitHubと同じように、DockerはDocker Hub無しでも使える
+

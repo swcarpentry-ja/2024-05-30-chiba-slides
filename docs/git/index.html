@@ -8,9 +8,9 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.549">
+  <meta name="generator" content="quarto-1.3.450">
 
-  <title>SWC @ 千葉大学</title>
+  <title>SWC @ 千葉大学 – index</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,7 +30,7 @@
     }
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -221,8 +221,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -400,8 +399,8 @@
 </section>
 
 <section>
-<section id="github-におけるリモート" class="title-slide slide level1 center">
-<h1>GitHub におけるリモート</h1>
+<section id="github-における-リモート" class="title-slide slide level1 center">
+<h1>GitHub における<br>リモート</h1>
 
 </section>
 <section id="認証の設定" class="slide level2">
@@ -438,11 +437,11 @@
 </section>
 <section id="ssh-鍵の存在を確認する" class="slide level2">
 <h2>SSH 鍵の存在を確認する</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">ls</span> <span class="at">-al</span> ~/.ssh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="ssh-鍵の作成" class="slide level2">
 <h2>SSH 鍵の作成</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"vlad@tran.sylvan.ia"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"vlad@tran.sylvan.ia"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>vlad@tran.sylvan.ia</code>には、自分のメールアドレスを入力してください（公開されているGitHubリポジトリを使用する場合、このメールアドレスも公開されることになります）</p>
 </section>
 <section id="ssh-鍵の作成-1" class="slide level2">
@@ -459,7 +458,7 @@ Enter passphrase (empty for no passphrase):</code></pre>
 </section>
 <section id="公開鍵をgithubに置く" class="slide level2 smaller">
 <h2>公開鍵をGitHubに置く</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">cat</span> ~/.ssh/id_ed25519.pub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">cat</span> ~/.ssh/id_ed25519.pub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><p>右上隅にあるプロファイルの画像をクリックし、次に[設定]をクリックします。</p></li>
 <li><p>サイドバーの [アクセス] セクションで、 [ SSH キーと GPG キー] をクリックします</p></li>
@@ -469,7 +468,7 @@ Enter passphrase (empty for no passphrase):</code></pre>
 </section>
 <section id="sshでログイン" class="slide level2">
 <h2>SSHでログイン</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="リモートリポジトリを作成する" class="slide level2">
 <h2>リモートリポジトリを作成する</h2>
@@ -496,16 +495,102 @@ Enter passphrase (empty for no passphrase):</code></pre>
 </section>
 <section id="リモートリポジトリに変更をプッシュする" class="slide level2">
 <h2>リモートリポジトリに変更をプッシュする</h2>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2">
 
 
+<img data-src="https://swcarpentry-ja.github.io/git-novice/fig/github-repo-after-first-push.svg" class="r-stretch"></section></section>
+<section>
+<section id="共同作業" class="title-slide slide level1 center">
+<h1>共同作業</h1>
 
-<img data-src="https://swcarpentry-ja.github.io/git-novice/fig/github-repo-after-first-push.svg" class="r-stretch"><div class="quarto-auto-generated-content">
+</section>
+<section id="githubを介して共同作業してみよう" class="slide level2">
+<h2>GitHubを介して共同作業してみよう</h2>
+<ul>
+<li><p>今回の課題は、<strong>ペア</strong>を組んでやります</p></li>
+<li><p>一人は「<strong>オーナー</strong>」、もう一人は「<strong>コラボレーター</strong>」</p></li>
+<li><p>コラボレーターの目標は、オーナーのリポジトリに変更を加えることです。</p></li>
+<li><p>最後に役割を交代するので、両方の人がオーナーとコラボレーターの役割を果たします。</p></li>
+</ul>
+</section>
+<section id="コラボレーターにアクセス権限を与える" class="slide level2">
+<h2>コラボレーターにアクセス権限を与える</h2>
+<ul>
+<li>GitHubのリポジトリページで「Settings」ボタンをクリックします。</li>
+<li>「Collaborators」を選択します。</li>
+<li>「Add people」をクリックし、パートナーの<strong>ユーザー名</strong>を入力します。</li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="https://swcarpentry-ja.github.io/git-novice/fig/github-add-collaborators.png" class="r-stretch"></section>
+<section id="コラボレーターがオーナーのリポジトリへのアクセスを受け入れる" class="slide level2">
+<h2>コラボレーターがオーナーのリポジトリへのアクセスを受け入れる</h2>
+<ul>
+<li><a href="https://github.com/notifications" class="uri">https://github.com/notifications</a> にアクセスするか、メール通知を確認します。</li>
+<li>オーナーのリポジトリへのアクセスを受け入れます。</li>
+</ul>
+</section>
+<section id="オーナーのリポジトリをクローンする" class="slide level2">
+<h2>オーナーのリポジトリをクローンする</h2>
+<ul>
+<li><p>コラボレーターはオーナーのリポジトリのコピーを自分のマシンにダウンロードします。（<strong>クローンする</strong>）</p></li>
+<li><p>自分の <code>planets.git</code> バージョンを上書きしないように、オーナーのリポジトリを別の場所にクローンします。</p></li>
+</ul>
+</section>
+<section id="オーナーのリポジトリをクローンする-1" class="slide level2">
+<h2>オーナーのリポジトリをクローンする</h2>
+<p>デスクトップフォルダにクローンする場合:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1"></a><span class="ex">$</span> git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>vlad</code> をオーナーのユーザー名に置き換えます。</p>
+<p>クローンパス（<code>~/Desktop/vlad-planets</code>）を指定しない場合は、自分の <code>planets</code> フォルダ内にクローンされるので、<strong>最初にデスクトップフォルダに移動してください。</strong></p>
+</section>
+<section class="slide level2">
+
+
+<img data-src="https://swcarpentry-ja.github.io/git-novice/fig/github-collaboration.svg" class="r-stretch"></section>
+<section id="クローンしたリポジトリーに変更を加える" class="slide level2">
+<h2>クローンしたリポジトリーに変更を加える</h2>
+<ul>
+<li>コラボレーターは、オーナーのリポジトリのクローンで変更を加えることができます。例えば:</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1"></a><span class="bu">cd</span> ~/Desktop/vlad-planets</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">nano</span> pluto.txt</span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="fu">git</span> add pluto.txt</span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add notes about Pluto"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="変更を加えたファイルをリモートに送るプッシュ" class="slide level2">
+<h2>変更を加えたファイルをリモートに送る（プッシュ）</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="オーナーのリポジトリを確認" class="slide level2">
+<h2>オーナーのリポジトリを確認</h2>
+<ul>
+<li><p>オーナーのリポジトリを再確認し、コラボレーターが行った新しいコミットを確認します。</p></li>
+<li><p>ブラウザをリフレッシュする必要があるかもしれません</p></li>
+</ul>
+</section>
+<section id="オーナーのローカルなリポジトリの更新" class="slide level2">
+<h2>オーナーのローカルなリポジトリの更新</h2>
+<ul>
+<li>オーナーが行います：</li>
+</ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>これで、三つのリポジトリ（オーナー、オーナーのリモート、コラボレーター）が同期されました</li>
+</ul>
+</section>
+<section id="もう一回しましょう" class="slide level2">
+<h2>もう一回しましょう</h2>
+<ul>
+<li>今度は役割を交代して、もう一度やってみましょう</li>
+</ul>
+
 <div class="footer footer-default">
 
-</div>
 </div>
 </section></section>
     </div>
@@ -534,6 +619,7 @@ Enter passphrase (empty for no passphrase):</code></pre>
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -794,9 +880,10 @@ Enter passphrase (empty for no passphrase):</code></pre>
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -806,17 +893,8 @@ Enter passphrase (empty for no passphrase):</code></pre>
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

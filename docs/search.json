@@ -558,5 +558,75 @@
     "title": "SWC @ 千葉大学",
     "section": "リモートリポジトリに変更をプッシュする",
     "text": "リモートリポジトリに変更をプッシュする\ngit push origin main"
+  },
+  {
+    "objectID": "git/index.html#githubを介して共同作業してみよう",
+    "href": "git/index.html#githubを介して共同作業してみよう",
+    "title": "SWC @ 千葉大学",
+    "section": "GitHubを介して共同作業してみよう",
+    "text": "GitHubを介して共同作業してみよう\n\n今回の課題は、ペアを組んでやります\n一人は「オーナー」、もう一人は「コラボレーター」\nコラボレーターの目標は、オーナーのリポジトリに変更を加えることです。\n最後に役割を交代するので、両方の人がオーナーとコラボレーターの役割を果たします。"
+  },
+  {
+    "objectID": "git/index.html#コラボレーターにアクセス権限を与える",
+    "href": "git/index.html#コラボレーターにアクセス権限を与える",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレーターにアクセス権限を与える",
+    "text": "コラボレーターにアクセス権限を与える\n\nGitHubのリポジトリページで「Settings」ボタンをクリックします。\n「Collaborators」を選択します。\n「Add people」をクリックし、パートナーのユーザー名を入力します。"
+  },
+  {
+    "objectID": "git/index.html#コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "href": "git/index.html#コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "text": "コラボレーターがオーナーのリポジトリへのアクセスを受け入れる\n\nhttps://github.com/notifications にアクセスするか、メール通知を確認します。\nオーナーのリポジトリへのアクセスを受け入れます。"
+  },
+  {
+    "objectID": "git/index.html#オーナーのリポジトリをクローンする",
+    "href": "git/index.html#オーナーのリポジトリをクローンする",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリをクローンする",
+    "text": "オーナーのリポジトリをクローンする\n\nコラボレーターはオーナーのリポジトリのコピーを自分のマシンにダウンロードします。（クローンする）\n自分の planets.git バージョンを上書きしないように、オーナーのリポジトリを別の場所にクローンします。"
+  },
+  {
+    "objectID": "git/index.html#オーナーのリポジトリをクローンする-1",
+    "href": "git/index.html#オーナーのリポジトリをクローンする-1",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリをクローンする",
+    "text": "オーナーのリポジトリをクローンする\nデスクトップフォルダにクローンする場合:\n$ git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets\nvlad をオーナーのユーザー名に置き換えます。\nクローンパス（~/Desktop/vlad-planets）を指定しない場合は、自分の planets フォルダ内にクローンされるので、最初にデスクトップフォルダに移動してください。"
+  },
+  {
+    "objectID": "git/index.html#クローンしたリポジトリーに変更を加える",
+    "href": "git/index.html#クローンしたリポジトリーに変更を加える",
+    "title": "SWC @ 千葉大学",
+    "section": "クローンしたリポジトリーに変更を加える",
+    "text": "クローンしたリポジトリーに変更を加える\n\nコラボレーターは、オーナーのリポジトリのクローンで変更を加えることができます。例えば:\n\ncd ~/Desktop/vlad-planets\nnano pluto.txt\ngit add pluto.txt\ngit commit -m \"Add notes about Pluto\""
+  },
+  {
+    "objectID": "git/index.html#変更を加えたファイルをリモートに送るプッシュ",
+    "href": "git/index.html#変更を加えたファイルをリモートに送るプッシュ",
+    "title": "SWC @ 千葉大学",
+    "section": "変更を加えたファイルをリモートに送る（プッシュ）",
+    "text": "変更を加えたファイルをリモートに送る（プッシュ）\ngit push origin main"
+  },
+  {
+    "objectID": "git/index.html#オーナーのリポジトリを確認",
+    "href": "git/index.html#オーナーのリポジトリを確認",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリを確認",
+    "text": "オーナーのリポジトリを確認\n\nオーナーのリポジトリを再確認し、コラボレーターが行った新しいコミットを確認します。\nブラウザをリフレッシュする必要があるかもしれません"
+  },
+  {
+    "objectID": "git/index.html#オーナーのローカルなリポジトリの更新",
+    "href": "git/index.html#オーナーのローカルなリポジトリの更新",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのローカルなリポジトリの更新",
+    "text": "オーナーのローカルなリポジトリの更新\n\nオーナーが行います：\n\ngit pull origin main\n\nこれで、三つのリポジトリ（オーナー、オーナーのリモート、コラボレーター）が同期されました"
+  },
+  {
+    "objectID": "git/index.html#もう一回しましょう",
+    "href": "git/index.html#もう一回しましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "もう一回しましょう",
+    "text": "もう一回しましょう\n\n今度は役割を交代して、もう一度やってみましょう"
   }
 ]

@@ -17,7 +17,7 @@ execute:
 
 <https://swcarpentry-ja.github.io/2024-05-30-chiba/git>
 
-# GitHub におけるリモート
+# GitHub における<br>リモート
 
 ## 認証の設定
 
@@ -137,4 +137,90 @@ git push origin main
 ---
 
 ![](https://swcarpentry-ja.github.io/git-novice/fig/github-repo-after-first-push.svg)
+
+# 共同作業
+
+## GitHubを介して共同作業してみよう
+
+- 今回の課題は、**ペア**を組んでやります
+
+- 一人は「**オーナー**」、もう一人は「**コラボレーター**」
+
+- コラボレーターの目標は、オーナーのリポジトリに変更を加えることです。
+
+- 最後に役割を交代するので、両方の人がオーナーとコラボレーターの役割を果たします。
+
+## コラボレーターにアクセス権限を与える
+
+- GitHubのリポジトリページで「Settings」ボタンをクリックします。
+- 「Collaborators」を選択します。
+- 「Add people」をクリックし、パートナーの**ユーザー名**を入力します。
+
+---
+
+![](https://swcarpentry-ja.github.io/git-novice/fig/github-add-collaborators.png)
+
+## コラボレーターがオーナーのリポジトリへのアクセスを受け入れる
+
+- <https://github.com/notifications> にアクセスするか、メール通知を確認します。
+- オーナーのリポジトリへのアクセスを受け入れます。
+
+## オーナーのリポジトリをクローンする
+
+- コラボレーターはオーナーのリポジトリのコピーを自分のマシンにダウンロードします。（**クローンする**）
+
+- 自分の `planets.git` バージョンを上書きしないように、オーナーのリポジトリを別の場所にクローンします。
+
+## オーナーのリポジトリをクローンする
+
+デスクトップフォルダにクローンする場合:
+
+```bash
+$ git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets
+```
+
+`vlad` をオーナーのユーザー名に置き換えます。
+
+クローンパス（`~/Desktop/vlad-planets`）を指定しない場合は、自分の `planets` フォルダ内にクローンされるので、**最初にデスクトップフォルダに移動してください。**
+
+---
+
+![](https://swcarpentry-ja.github.io/git-novice/fig/github-collaboration.svg)
+
+## クローンしたリポジトリーに変更を加える
+
+- コラボレーターは、オーナーのリポジトリのクローンで変更を加えることができます。例えば:
+
+``` bash
+cd ~/Desktop/vlad-planets
+nano pluto.txt
+git add pluto.txt
+git commit -m "Add notes about Pluto"
+```
+
+## 変更を加えたファイルをリモートに送る（プッシュ）
+
+``` bash
+git push origin main
+```
+
+## オーナーのリポジトリを確認
+
+- オーナーのリポジトリを再確認し、コラボレーターが行った新しいコミットを確認します。
+
+- ブラウザをリフレッシュする必要があるかもしれません
+
+## オーナーのローカルなリポジトリの更新
+
+- オーナーが行います：
+
+``` bash
+git pull origin main
+```
+
+- これで、三つのリポジトリ（オーナー、オーナーのリモート、コラボレーター）が同期されました
+
+## もう一回しましょう
+
+- 今度は役割を交代して、もう一度やってみましょう
 

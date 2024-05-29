@@ -39,21 +39,21 @@
     "href": "swc-intro/index.html#問題",
     "title": "SWC @ 千葉大学",
     "section": "問題",
-    "text": "問題\n\n\n\n研究者は最近コードを使えざるを得ない\nほとんどは独学で覚えている\nが、効率はあまり高くない"
+    "text": "問題\n\n\n\n研究者は最近コードを使えざるを得ません\nほとんどは独学で覚えます\nが、効率はあまり高くない"
   },
   {
     "objectID": "swc-intro/index.html#swcの解決法",
     "href": "swc-intro/index.html#swcの解決法",
     "title": "SWC @ 千葉大学",
     "section": "SWCの解決法",
-    "text": "SWCの解決法\n\n\n\n研究者がコミュニティを作って、互いに教え合う\n二日間にわたるワークショップ\n３−４レッスンを教える"
+    "text": "SWCの解決法\n\n\n\n研究者がコミュニティを作って、互いに教え合います\n二日間にわたるワークショップ\n３−４レッスンを教えます"
   },
   {
     "objectID": "swc-intro/index.html#ワークショップ",
     "href": "swc-intro/index.html#ワークショップ",
     "title": "SWC @ 千葉大学",
     "section": "ワークショップ",
-    "text": "ワークショップ\n\n誰でも参加できる\n無料か少額\nワークショップを教えるのに資格が必要\n改善のためのフィードバックは重視されている"
+    "text": "ワークショップ\n\n誰でも参加できます\n無料か少額\nワークショップを教えるのに資格が必要\n改善のためのフィードバックは重視されています"
   },
   {
     "objectID": "swc-intro/index.html#年以来55ヵ国で-2164ワークショップを実施",
@@ -74,7 +74,7 @@
     "href": "swc-intro/index.html#参加者大募集中",
     "title": "SWC @ 千葉大学",
     "section": "参加者大募集中!",
-    "text": "参加者大募集中!\n\nSlack\n\nhttps://slack-invite.carpentries.org/から Slack に参加後、 #local-japan チャンネルに入ってください\n\nGitHub: https://swcarpentry-ja.github.io/"
+    "text": "参加者大募集中!\n\nSlack\n\nhttps://slack-invite.carpentries.org/から Slack に参加後、 #local-japan チャンネルに入って下さい\n\nGitHub: https://swcarpentry-ja.github.io/"
   },
   {
     "objectID": "swc-intro/index.html#内容",
@@ -95,21 +95,21 @@
     "href": "swc-intro/index.html#ライブコーディングとは",
     "title": "SWC @ 千葉大学",
     "section": "ライブコーディングとは？",
-    "text": "ライブコーディングとは？\n\n\n\nインストラクターが打っていると同じコードを同時に自分のパソコンで打っていく\nそのコードを理解することを最も優先してください（メモをとるなどよりも）"
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターが打っていると同じコードを同時に自分のパソコンで打っていく\nそのコードを理解することを最も優先して下さい（メモをとるなどよりも）"
   },
   {
     "objectID": "swc-intro/index.html#ライブコーディングとは-1",
     "href": "swc-intro/index.html#ライブコーディングとは-1",
     "title": "SWC @ 千葉大学",
     "section": "ライブコーディングとは？",
-    "text": "ライブコーディングとは？\n\n\n\nインストラクターが参加者の理解を確認する（「〜が出来ましたか？」）\nうまく出来ていれば、緑付箋をラップトップにつける\n何か困っているときは、赤付箋をラップトップにつける\n\nヘルパーが助けに行く"
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターが参加者の理解を確認する（「〜が出来ましたか？」）\nうまく出来ていれば、緑付箋をラップトップにつけて下さい\n何か困っているときは、赤付箋をラップトップにつけて下さい\n\nヘルパーが助けに行きます"
   },
   {
     "objectID": "swc-intro/index.html#コラボレイティブノート",
     "href": "swc-intro/index.html#コラボレイティブノート",
     "title": "SWC @ 千葉大学",
     "section": "コラボレイティブ・ノート",
-    "text": "コラボレイティブ・ノート\nHackMDにコードを貼っておきます。\n\nもしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照してください。\n\n参加者も自由に書き込んでいいです"
+    "text": "コラボレイティブ・ノート\nHackMDにコードを貼っておきます。\n\nもしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照して下さい。\n\n参加者も自由に書き込んでいいです"
   },
   {
     "objectID": "swc-intro/index.html#フィードバックの種類",
@@ -392,8 +392,8 @@
     "text": "BioConda からイメージの検索\n\nhttp://bioconda.github.io/から「Search」で使いたいソフトウェアを検索します\ncontainer noneというアイコンをクリック（noneとは嘘です！）\nhttps://quay.io/（Red Hat社が持っているイメージのハブ）に飛びます\nタグアイコンをクリックして、イメージのタグを選びます"
   },
   {
-    "objectID": "docker/index.html#dockerイメージの作り方",
-    "href": "docker/index.html#dockerイメージの作り方",
+    "objectID": "docker/index.html#dockerイメージの作り方-1",
+    "href": "docker/index.html#dockerイメージの作り方-1",
     "title": "SWC @ 千葉大学",
     "section": "Dockerイメージの作り方",
     "text": "Dockerイメージの作り方\nこの部分の内容はこちらです：https://carpentries-incubator.github.io/docker-introduction/creating-container-images/index.html"
@@ -411,6 +411,20 @@
     "title": "SWC @ 千葉大学",
     "section": "チャレンジ：復習",
     "text": "チャレンジ：復習\n\nコンテナイメージが正しく作成されたかどうかを確認するためには、どのコマンドを実行すればよいですか？\nコンテナイメージ名にタグを指定しませんでした。Dockerは自動的にどのタグを使用しましたか？\n作成したコンテナイメージを基にコンテナを実行するには、どのコマンドを使用しますか？そのようなコンテナを実行した場合、デフォルトでは何が起こりますか？「hello world」を表示するようにすることはできますか？"
+  },
+  {
+    "objectID": "docker/index.html#コンテナの外に存在するファイルの使い方",
+    "href": "docker/index.html#コンテナの外に存在するファイルの使い方",
+    "title": "SWC @ 千葉大学",
+    "section": "コンテナの外に存在するファイルの使い方",
+    "text": "コンテナの外に存在するファイルの使い方\nこの部分の内容はこちらです：https://carpentries-incubator.github.io/docker-introduction/advanced-containers/index.html"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジこのスクリプトの使い方",
+    "href": "docker/index.html#チャレンジこのスクリプトの使い方",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：このスクリプトの使い方",
+    "text": "チャレンジ：このスクリプトの使い方\n\nsum.pyの後に数字を書くと、どうなりますか？"
   },
   {
     "objectID": "shell/index.html#データの準備",
@@ -698,5 +712,47 @@
     "title": "SWC @ 千葉大学",
     "section": "rm -rでフォルダを削除",
     "text": "rm -rでフォルダを削除\n\ncpで-rを使用するのと同様に、フォルダを削除するには-rが必要です:\n\nrm -r thesis\n\n再度、注意！！"
+  },
+  {
+    "objectID": "shell/index.html#複数のファイルの移動コピーまたは削除",
+    "href": "shell/index.html#複数のファイルの移動コピーまたは削除",
+    "title": "SWC @ 千葉大学",
+    "section": "複数のファイルの移動、コピー、または削除",
+    "text": "複数のファイルの移動、コピー、または削除\n\n複数のファイルをフォルダに移動またはコピーするには、まずすべてのファイル名を入力し、最後にフォルダ名を入力します。\nこれをshell-lesson-data/exercise-dataで試してみましょう：\n\nmkdir backup\ncp creatures/minotaur.dat creatures/unicorn.dat backup/"
+  },
+  {
+    "objectID": "shell/index.html#ワイルドカードを使って複数のファイルを一度に指定する",
+    "href": "shell/index.html#ワイルドカードを使って複数のファイルを一度に指定する",
+    "title": "SWC @ 千葉大学",
+    "section": "ワイルドカードを使って複数のファイルを一度に指定する",
+    "text": "ワイルドカードを使って複数のファイルを一度に指定する\n\n複数のファイルを一度に移動するのは便利ですが、たくさん入力する必要がありました\n* や ? を使って複数のファイル名に一致させることができます。これらは「ワイルドカード」と呼ばれます"
+  },
+  {
+    "objectID": "shell/index.html#ワイルドカードを使って複数のファイルを一度に指定する-1",
+    "href": "shell/index.html#ワイルドカードを使って複数のファイルを一度に指定する-1",
+    "title": "SWC @ 千葉大学",
+    "section": "ワイルドカードを使って複数のファイルを一度に指定する",
+    "text": "ワイルドカードを使って複数のファイルを一度に指定する\n\nshell-lesson-data/exercise-data/alkanesにあるファイルを考えてみましょう：\n*: 0文字以上の任意の文字を表します。\n\n例: *.pdb は ethane.pdb、propane.pdb などに一致します。\n例: p*.pdb は pentane.pdb、propane.pdb に一致します。"
+  },
+  {
+    "objectID": "shell/index.html#ワイルドカードを使って複数のファイルを一度に指定する-2",
+    "href": "shell/index.html#ワイルドカードを使って複数のファイルを一度に指定する-2",
+    "title": "SWC @ 千葉大学",
+    "section": "ワイルドカードを使って複数のファイルを一度に指定する",
+    "text": "ワイルドカードを使って複数のファイルを一度に指定する\n?: 正確に1文字を表します。\n\n例: ?ethane.pdb は methane.pdb に一致します。\n例: *ethane.pdb は ethane.pdb、methane.pdb に一致します。\n例: ???ane.pdb は cubane.pdb、ethane.pdb、octane.pdb に一致します。"
+  },
+  {
+    "objectID": "shell/index.html#チャレンジパターンに一致するファイル名",
+    "href": "shell/index.html#チャレンジパターンに一致するファイル名",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：パターンに一致するファイル名",
+    "text": "チャレンジ：パターンに一致するファイル名\nalkanes ディレクトリで実行すると、以下の ls コマンドのうちどれが次の出力を生成しますか？\nethane.pdb methane.pdb\n\nls *t*ane.pdb\nls *t?ne.*\nls *t??ne.pdb\nls ethane.*"
+  },
+  {
+    "objectID": "shell/index.html#チャレンジディレクトリと-ファイルの整理",
+    "href": "shell/index.html#チャレンジディレクトリと-ファイルの整理",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：ディレクトリとファイルの整理",
+    "text": "チャレンジ：ディレクトリとファイルの整理\nジェーミーはプロジェクトに取り組んでおり、ファイルがあまり整理されていないことに気づきました：\nls -F\nanalyzed/  fructose.dat    raw/   sucrose.dat\n以下のコマンドが示す出力を得るために、彼女はどのコマンドを実行する必要がありますか？\nls -F\nanalyzed/   raw/\nls analyzed\nfructose.dat    sucrose.dat"
   }
 ]

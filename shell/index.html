@@ -732,6 +732,64 @@ Documents   Library     Music       Public</code></pre>
 <ul>
 <li>再度、<strong>注意！！</strong></li>
 </ul>
+</section>
+<section id="複数のファイルの移動コピーまたは削除" class="slide level2">
+<h2>複数のファイルの移動、コピー、または削除</h2>
+<ul>
+<li><p>複数のファイルをフォルダに移動またはコピーするには、まずすべてのファイル名を入力し、最後にフォルダ名を入力します。</p></li>
+<li><p>これをshell-lesson-data/exercise-dataで試してみましょう：</p></li>
+</ul>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a></a><span class="fu">mkdir</span> backup</span>
+<span id="cb28-2"><a></a><span class="fu">cp</span> creatures/minotaur.dat creatures/unicorn.dat backup/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="ワイルドカードを使って複数のファイルを一度に指定する" class="slide level2">
+<h2>ワイルドカードを使って複数のファイルを一度に指定する</h2>
+<ul>
+<li><p>複数のファイルを一度に移動するのは便利ですが、たくさん入力する必要がありました</p></li>
+<li><p><code>*</code> や <code>?</code> を使って複数のファイル名に一致させることができます。これらは<strong>「ワイルドカード」</strong>と呼ばれます</p></li>
+</ul>
+</section>
+<section id="ワイルドカードを使って複数のファイルを一度に指定する-1" class="slide level2">
+<h2>ワイルドカードを使って複数のファイルを一度に指定する</h2>
+<ul>
+<li><p><code>shell-lesson-data/exercise-data/alkanes</code>にあるファイルを考えてみましょう：</p></li>
+<li><p><code>*</code>: 0文字以上の任意の文字を表します。</p>
+<ul>
+<li>例: <code>*.pdb</code> は <code>ethane.pdb</code>、<code>propane.pdb</code> などに一致します。</li>
+<li>例: <code>p*.pdb</code> は <code>pentane.pdb</code>、<code>propane.pdb</code> に一致します。</li>
+</ul></li>
+</ul>
+</section>
+<section id="ワイルドカードを使って複数のファイルを一度に指定する-2" class="slide level2">
+<h2>ワイルドカードを使って複数のファイルを一度に指定する</h2>
+<p><code>?</code>: 正確に1文字を表します。</p>
+<ul>
+<li>例: <code>?ethane.pdb</code> は <code>methane.pdb</code> に一致します。</li>
+<li>例: <code>*ethane.pdb</code> は <code>ethane.pdb</code>、<code>methane.pdb</code> に一致します。</li>
+<li>例: <code>???ane.pdb</code> は <code>cubane.pdb</code>、<code>ethane.pdb</code>、<code>octane.pdb</code> に一致します。</li>
+</ul>
+</section>
+<section id="チャレンジパターンに一致するファイル名" class="slide level2">
+<h2>チャレンジ：パターンに一致するファイル名</h2>
+<p><code>alkanes</code> ディレクトリで実行すると、以下の <code>ls</code> コマンドのうちどれが次の出力を生成しますか？</p>
+<p><code>ethane.pdb</code> <code>methane.pdb</code></p>
+<ol type="1">
+<li><code>ls *t*ane.pdb</code></li>
+<li><code>ls *t?ne.*</code></li>
+<li><code>ls *t??ne.pdb</code></li>
+<li><code>ls ethane.*</code></li>
+</ol>
+</section>
+<section id="チャレンジディレクトリと-ファイルの整理" class="slide level2 smaller">
+<h2>チャレンジ：ディレクトリと<br>ファイルの整理</h2>
+<p>ジェーミーはプロジェクトに取り組んでおり、ファイルがあまり整理されていないことに気づきました：</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>analyzed/  fructose.dat    raw/   sucrose.dat</code></pre>
+<p>以下のコマンドが示す出力を得るために、彼女は<strong>どのコマンドを実行する必要がありますか</strong>？</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>analyzed/   raw/</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a></a><span class="fu">ls</span> analyzed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>fructose.dat    sucrose.dat</code></pre>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

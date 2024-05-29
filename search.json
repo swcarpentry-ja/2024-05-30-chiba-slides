@@ -133,6 +133,27 @@
     "text": "ワークショップのウエブサイト\nソフトウェアカーペントリーの紹介\nUnixシェル\ngit\nDocker"
   },
   {
+    "objectID": "git/index.html#ファイルを無視する-1",
+    "href": "git/index.html#ファイルを無視する-1",
+    "title": "SWC @ 千葉大学",
+    "section": "ファイルを無視する",
+    "text": "ファイルを無視する\n\nGitに追跡して欲しくないファイルもあります（データ、解析結果）\n.gitignore で無視するファイルを指定できます\n\n詳細はこちら：https://swcarpentry-ja.github.io/git-novice/06-ignore.html"
+  },
+  {
+    "objectID": "git/index.html#チャレンジ埋もれたファイルを無視する",
+    "href": "git/index.html#チャレンジ埋もれたファイルを無視する",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：埋もれたファイルを無視する",
+    "text": "チャレンジ：埋もれたファイルを無視する\n以下のようなディレクトリ構造があるとします：\nresults/data\nresults/plots\nresults/data ではなく、results/plots のみを無視するにはどうすればいいのでしょう？"
+  },
+  {
+    "objectID": "git/index.html#チャレンジログファイル",
+    "href": "git/index.html#チャレンジログファイル",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：ログファイル",
+    "text": "チャレンジ：ログファイル\n仮に log_01、log_02、log_03、というように、中間的にログファイルを作成するスクリプトを書いたとします。 これらのログファイルは取っておきたいのですが、git で追跡したくありません。\n\nlog_01、log_02、などのファイルを無視するためのルールを一つだけ .gitignoreに入力してください。\n入力したパターン正常に動作しているか確認するために log_01 などのファイルを作成してください。\n最終的に log_01 ファイルがものすごく重要であることが分かりました。.gitignoreを編集せずに、このファイルを追跡しているファイルに加えてください。\n隣の人と、追跡したくないファイルは他にどのようなものがあるのか、そして.gitignoreに何を入力すればこれらのファイルを無視できるのかを話し合ってください。"
+  },
+  {
     "objectID": "git/index.html#認証の設定",
     "href": "git/index.html#認証の設定",
     "title": "SWC @ 千葉大学",
@@ -224,6 +245,13 @@
     "text": "リモートリポジトリに変更をプッシュする\ngit push origin main"
   },
   {
+    "objectID": "git/index.html#チャレンジgithub-の-gui",
+    "href": "git/index.html#チャレンジgithub-の-gui",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：GitHub の GUI",
+    "text": "チャレンジ：GitHub の GUI\nGitHubのあなたのplanetsリポジトリに移動して下さい。\n「Code」ボタンの下にある「XX commits」というテキストを見つけてクリックします（「XX」は数字です）。各コミットの右側にある3つのボタンにカーソルを合わせてクリックします。\n\nこれらのボタンからどのような情報を収集/探索できますか？\nシェルで同じ情報を得るにはどうしますか？"
+  },
+  {
     "objectID": "git/index.html#githubを介して共同作業してみよう",
     "href": "git/index.html#githubを介して共同作業してみよう",
     "title": "SWC @ 千葉大学",
@@ -292,6 +320,13 @@
     "title": "SWC @ 千葉大学",
     "section": "もう一回しましょう",
     "text": "もう一回しましょう\n\n今度は役割を交代して、もう一度やってみましょう"
+  },
+  {
+    "objectID": "git/index.html#チャレンジ変更のレビュー",
+    "href": "git/index.html#チャレンジ変更のレビュー",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：変更のレビュー",
+    "text": "チャレンジ：変更のレビュー\nオーナーはコラボレーターに情報を提供せずにリポジトリにコミットをプッシュしました。\nコマンドラインでは、コラボレーターは何が変更されたかをどのように確認できますか？\nまた、GitHubではどうやって確認できますか？"
   },
   {
     "objectID": "about.html",

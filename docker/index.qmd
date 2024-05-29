@@ -13,6 +13,8 @@ execute:
 
 <https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/docker>
 
+# Docker Hub
+
 ## Docker Hubでコンテナを探す
 
 - Docker Hub（<https://hub.docker.com>）とは、様々なイメージのダウンロードが出来るウエブサイト
@@ -81,6 +83,8 @@ docker image pull python:3.8
 
 ![](../images/container_none.png){height=50px}
 
+# Dockerイメージの作り方
+
 ## Dockerイメージの作り方
 
 この部分の内容はこちらです：<https://carpentries-incubator.github.io/docker-introduction/creating-container-images/index.html>
@@ -102,4 +106,14 @@ Pythonをインストールするために、`Dockerfile`には何と書けば�
 - コンテナイメージが正しく作成されたかどうかを確認するためには、どのコマンドを実行すればよいですか？
 - コンテナイメージ名にタグを指定しませんでした。Dockerは自動的にどのタグを使用しましたか？
 - 作成したコンテナイメージを基にコンテナを実行するには、どのコマンドを使用しますか？そのようなコンテナを実行した場合、デフォルトでは何が起こりますか？「hello world」を表示するようにすることはできますか？
+
+# [もっと複雑なイメージ](https://carpentries-incubator.github.io/docker-introduction/advanced-containers/index.html)
+
+## コンテナの外に存在するファイルの使い方
+
+この部分の内容はこちらです：<https://carpentries-incubator.github.io/docker-introduction/advanced-containers/index.html>
+
+## チャレンジ：このスクリプトの使い方
+
+- `sum.py`の後に数字を書くと、どうなりますか？
 

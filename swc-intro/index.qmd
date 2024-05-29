@@ -105,9 +105,9 @@ execute:
 
 ::: {.columns}
 ::: {.column width="60%"}
-- 研究者は最近コードを使えざるを得ない  
+- 研究者は最近コードを使えざるを得ません
 
-- ほとんどは独学で覚えている
+- ほとんどは独学で覚えます
 
 - が、効率はあまり高くない
 :::
@@ -120,11 +120,11 @@ execute:
 
 ::: {.columns}
 ::: {.column width="60%"}
-- 研究者が**コミュニティを<br>作って**、互いに教え合う
+- 研究者が**コミュニティを<br>作って**、互いに教え合います
 
 - 二日間にわたるワークショップ
 
-- ３−４レッスンを教える
+- ３−４レッスンを教えます
 :::
 ::: {.column width="40%"}
 <img src="https://4.bp.blogspot.com/-v-d7JYMZJn0/VvKZKMuZhzI/AAAAAAAA5FQ/p8m3U0QRZ8kI8mbkOv0uMEZrwT7F5Baiw/s450/seminor_woman.png" alt="drawing" height="300"/>
@@ -133,13 +133,13 @@ execute:
 
 ## ワークショップ
 
-- 誰でも参加できる
+- 誰でも参加できます
 
 - 無料か少額
 
 - ワークショップを教えるのに[資格](https://carpentries.org/become-instructor/)が必要
 
-- 改善のためのフィードバックは重視されている
+- 改善のためのフィードバックは重視されています
 
 <img src="https://software-carpentry.org/files/workshops/mit-2013-slice.jpg" alt="drawing" height="150"/>
 
@@ -158,7 +158,7 @@ execute:
 
 - Slack
 
-  - <https://slack-invite.carpentries.org/>から Slack に参加後、 `#local-japan` チャンネルに入ってください
+  - <https://slack-invite.carpentries.org/>から Slack に参加後、 `#local-japan` チャンネルに入って下さい
 
 - GitHub: <https://swcarpentry-ja.github.io/>
 
@@ -184,7 +184,7 @@ execute:
 ::: {.column}
 - インストラクターが打っていると同じコードを同時に**自分のパソコンで<br>打っていく**
 
-- そのコードを**理解すること**を最も優先してください（メモをとるなどよりも）
+- そのコードを**理解すること**を最も優先して下さい（メモをとるなどよりも）
 :::
 ::: {.column}
 ![](https://datacarpentry.org/images//involved2.jpg)
@@ -197,10 +197,10 @@ execute:
 ::: {.column}
 - インストラクターが参加者の理解を<br>確認する（「〜が出来ましたか？」）
 
-- うまく出来ていれば、**緑付箋**を<br>ラップトップにつける
+- うまく出来ていれば、**緑付箋**を<br>ラップトップにつけて下さい
 
-- 何か困っているときは、**赤付箋**を<br>ラップトップにつける
-  - ヘルパーが助けに行く
+- 何か困っているときは、**赤付箋**を<br>ラップトップにつけて下さい
+  - ヘルパーが助けに行きます
 :::
 ::: {.column}
 ![](https://datacarpentry.org/images//DC_room3.jpg)
@@ -211,13 +211,13 @@ execute:
 
 <br><br>
 
-インストラクターが聞かなくても、何か問題があった時に**声をかけてください**
+インストラクターが聞かなくても、何か問題があった時に**声をかけて下さい**
 
 ## コラボレイティブ・ノート
 
 [HackMD](https://hackmd.io/@swcarpentry-ja/rkXVzlJV0)にコードを貼っておきます。
 
-- もしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照してください。
+- もしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照して下さい。
   - 参加者も自由に書き込んでいいです
 
 ## フィードバックの種類

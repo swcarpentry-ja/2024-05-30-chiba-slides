@@ -268,3 +268,9 @@ git pull origin main
 コマンドラインでは、コラボレーターは何が変更されたかをどのように確認できますか？
 
 また、GitHubではどうやって確認できますか？
+
+# 衝突の管理
+
+---
+
+![](https://swcarpentry-ja.github.io/git-novice/fig/conflict.svg)

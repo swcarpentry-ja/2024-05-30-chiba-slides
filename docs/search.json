@@ -1,10 +1,374 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "git/index.html#認証の設定",
+    "href": "git/index.html#認証の設定",
+    "title": "SWC @ 千葉大学",
+    "section": "認証の設定",
+    "text": "認証の設定\n\nリモートリポジトリに接続する前に、自分のコンピュータが GitHub に認証される方法を設定する必要があります。\nこれにより、GitHub はあなたのコンピュータからのアクセスを信頼できるようになります。"
+  },
+  {
+    "objectID": "git/index.html#ssh-プロトコルとは",
+    "href": "git/index.html#ssh-プロトコルとは",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH プロトコルとは？",
+    "text": "SSH プロトコルとは？\n\nコマンドラインでのアクセスを認証するために一般的に使用される方法を設定します。\nこの方法は「Secure Shell Protocol（SSH）」と呼ばれます。\nSSH は、暗号化されたネットワークプロトコルで、通常は安全でないネットワークを使用してコンピュータ間の安全な通信を可能にします。"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵ペアの仕組み",
+    "href": "git/index.html#ssh-鍵ペアの仕組み",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵ペアの仕組み",
+    "text": "SSH 鍵ペアの仕組み\n\nSSH は「鍵ペア」を使用します。\n鍵ペアはアクセスを検証するために連携して動作する2つの鍵です。\n一つは公開鍵（public key）、もう一つは秘密鍵（private key）と呼ばれます。"
+  },
+  {
+    "objectID": "git/index.html#公開鍵と秘密鍵の例え",
+    "href": "git/index.html#公開鍵と秘密鍵の例え",
+    "title": "SWC @ 千葉大学",
+    "section": "公開鍵と秘密鍵の例え",
+    "text": "公開鍵と秘密鍵の例え\n\n公開鍵を南京錠と考えてください。\n秘密鍵はその南京錠を開ける鍵です。\n公開鍵を GitHub アカウントに設定し、「この南京錠で通信をロックしてください」とします。\nこれにより、秘密鍵を持つコンピュータだけが通信を解読し、Git コマンドを GitHub アカウントとして送信できます。"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵の存在を確認する",
+    "href": "git/index.html#ssh-鍵の存在を確認する",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵の存在を確認する",
+    "text": "SSH 鍵の存在を確認する\nls -al ~/.ssh"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵の作成",
+    "href": "git/index.html#ssh-鍵の作成",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵の作成",
+    "text": "SSH 鍵の作成\nssh-keygen -t ed25519 -C \"vlad@tran.sylvan.ia\"\nvlad@tran.sylvan.iaには、自分のメールアドレスを入力してください（公開されているGitHubリポジトリを使用する場合、このメールアドレスも公開されることになります）"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵の作成-1",
+    "href": "git/index.html#ssh-鍵の作成-1",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵の作成",
+    "text": "SSH 鍵の作成\nGenerating public/private ed25519 key pair.\nEnter file in which to save the key (/c/Users/Vlad Dracula/.ssh/id_ed25519):\nデフォルト設定で良いので、リターンキーを押します。"
+  },
+  {
+    "objectID": "git/index.html#ssh-鍵の作成-2",
+    "href": "git/index.html#ssh-鍵の作成-2",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵の作成",
+    "text": "SSH 鍵の作成\nCreated directory '/c/Users/Vlad Dracula/.ssh'.\nEnter passphrase (empty for no passphrase):\nパスワードを設定します（空欄にすると、パスワードなしになります）。パスワードを設定すると、GitHubを使用するたびに入力が必要になります。"
+  },
+  {
+    "objectID": "git/index.html#公開鍵をgithubに置く",
+    "href": "git/index.html#公開鍵をgithubに置く",
+    "title": "SWC @ 千葉大学",
+    "section": "公開鍵をGitHubに置く",
+    "text": "公開鍵をGitHubに置く\ncat ~/.ssh/id_ed25519.pub\n\n右上隅にあるプロファイルの画像をクリックし、次に[設定]をクリックします。\nサイドバーの [アクセス] セクションで、 [ SSH キーと GPG キー] をクリックします\nNew SSH key または Add SSH key をクリックします\n公開鍵をペストし、覚えやすい名前を設定します"
+  },
+  {
+    "objectID": "git/index.html#sshでログイン",
+    "href": "git/index.html#sshでログイン",
+    "title": "SWC @ 千葉大学",
+    "section": "SSHでログイン",
+    "text": "SSHでログイン\nssh -T git@github.com"
+  },
+  {
+    "objectID": "git/index.html#リモートリポジトリを作成する",
+    "href": "git/index.html#リモートリポジトリを作成する",
+    "title": "SWC @ 千葉大学",
+    "section": "リモートリポジトリを作成する",
+    "text": "リモートリポジトリを作成する"
+  },
+  {
+    "objectID": "git/index.html#リモートリポジトリを追加する",
+    "href": "git/index.html#リモートリポジトリを追加する",
+    "title": "SWC @ 千葉大学",
+    "section": "リモートリポジトリを追加する",
+    "text": "リモートリポジトリを追加する\ngit remote add originでリポジトリを追加する\ngit remote add origin git@github.com:vlad/planets.git\ngit remote -vで確認する\ngit remote -v"
+  },
+  {
+    "objectID": "git/index.html#リモートリポジトリに変更をプッシュする",
+    "href": "git/index.html#リモートリポジトリに変更をプッシュする",
+    "title": "SWC @ 千葉大学",
+    "section": "リモートリポジトリに変更をプッシュする",
+    "text": "リモートリポジトリに変更をプッシュする\ngit push origin main"
+  },
+  {
+    "objectID": "git/index.html#githubを介して共同作業してみよう",
+    "href": "git/index.html#githubを介して共同作業してみよう",
+    "title": "SWC @ 千葉大学",
+    "section": "GitHubを介して共同作業してみよう",
+    "text": "GitHubを介して共同作業してみよう\n\n今回の課題は、ペアを組んでやります\n一人は「オーナー」、もう一人は「コラボレーター」\nコラボレーターの目標は、オーナーのリポジトリに変更を加えることです。\n最後に役割を交代するので、両方の人がオーナーとコラボレーターの役割を果たします。"
+  },
+  {
+    "objectID": "git/index.html#コラボレーターにアクセス権限を与える",
+    "href": "git/index.html#コラボレーターにアクセス権限を与える",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレーターにアクセス権限を与える",
+    "text": "コラボレーターにアクセス権限を与える\n\nGitHubのリポジトリページで「Settings」ボタンをクリックします。\n「Collaborators」を選択します。\n「Add people」をクリックし、パートナーのユーザー名を入力します。"
+  },
+  {
+    "objectID": "git/index.html#コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "href": "git/index.html#コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "text": "コラボレーターがオーナーのリポジトリへのアクセスを受け入れる\n\nhttps://github.com/notifications にアクセスするか、メール通知を確認します。\nオーナーのリポジトリへのアクセスを受け入れます。"
+  },
+  {
+    "objectID": "git/index.html#オーナーのリポジトリをクローンする",
+    "href": "git/index.html#オーナーのリポジトリをクローンする",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリをクローンする",
+    "text": "オーナーのリポジトリをクローンする\n\nコラボレーターはオーナーのリポジトリのコピーを自分のマシンにダウンロードします。（クローンする）\n自分の planets.git バージョンを上書きしないように、オーナーのリポジトリを別の場所にクローンします。"
+  },
+  {
+    "objectID": "git/index.html#オーナーのリポジトリをクローンする-1",
+    "href": "git/index.html#オーナーのリポジトリをクローンする-1",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリをクローンする",
+    "text": "オーナーのリポジトリをクローンする\nデスクトップフォルダにクローンする場合:\n$ git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets\nvlad をオーナーのユーザー名に置き換えます。\nクローンパス（~/Desktop/vlad-planets）を指定しない場合は、自分の planets フォルダ内にクローンされるので、最初にデスクトップフォルダに移動してください。"
+  },
+  {
+    "objectID": "git/index.html#クローンしたリポジトリーに変更を加える",
+    "href": "git/index.html#クローンしたリポジトリーに変更を加える",
+    "title": "SWC @ 千葉大学",
+    "section": "クローンしたリポジトリーに変更を加える",
+    "text": "クローンしたリポジトリーに変更を加える\n\nコラボレーターは、オーナーのリポジトリのクローンで変更を加えることができます。例えば:\n\ncd ~/Desktop/vlad-planets\nnano pluto.txt\ngit add pluto.txt\ngit commit -m \"Add notes about Pluto\""
+  },
+  {
+    "objectID": "git/index.html#変更を加えたファイルをリモートに送るプッシュ",
+    "href": "git/index.html#変更を加えたファイルをリモートに送るプッシュ",
+    "title": "SWC @ 千葉大学",
+    "section": "変更を加えたファイルをリモートに送る（プッシュ）",
+    "text": "変更を加えたファイルをリモートに送る（プッシュ）\ngit push origin main"
+  },
+  {
+    "objectID": "git/index.html#オーナーのリポジトリを確認",
+    "href": "git/index.html#オーナーのリポジトリを確認",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリを確認",
+    "text": "オーナーのリポジトリを確認\n\nオーナーのリポジトリを再確認し、コラボレーターが行った新しいコミットを確認します。\nブラウザをリフレッシュする必要があるかもしれません"
+  },
+  {
+    "objectID": "git/index.html#オーナーのローカルなリポジトリの更新",
+    "href": "git/index.html#オーナーのローカルなリポジトリの更新",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのローカルなリポジトリの更新",
+    "text": "オーナーのローカルなリポジトリの更新\n\nオーナーが行います：\n\ngit pull origin main\n\nこれで、三つのリポジトリ（オーナー、オーナーのリモート、コラボレーター）が同期されました"
+  },
+  {
+    "objectID": "git/index.html#もう一回しましょう",
+    "href": "git/index.html#もう一回しましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "もう一回しましょう",
+    "text": "もう一回しましょう\n\n今度は役割を交代して、もう一度やってみましょう"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SWC @ 千葉大学",
     "section": "",
-    "text": "About this site"
+    "text": "ワークショップのウエブサイト\nソフトウェアカーペントリーの紹介\nUnixシェル\ngit\nDocker"
+  },
+  {
+    "objectID": "swc-intro/index.html#ニッタ-ジョエル-インストラクター",
+    "href": "swc-intro/index.html#ニッタ-ジョエル-インストラクター",
+    "title": "SWC @ 千葉大学",
+    "section": "ニッタ ジョエル（インストラクター）",
+    "text": "ニッタ ジョエル（インストラクター）\n\n\n@joelnitta\n\n千葉大学の准教授\n研究テーマ：シダ植物の進化、生態学、ゲノム解析\n趣味：ジョギング"
+  },
+  {
+    "objectID": "swc-intro/index.html#西田-孝三インストラクター",
+    "href": "swc-intro/index.html#西田-孝三インストラクター",
+    "title": "SWC @ 千葉大学",
+    "section": "西田 孝三（インストラクター）",
+    "text": "西田 孝三（インストラクター）\n\n\n\nパートタイマー\n東京農工大学 工学部生命工学科、理化学研究所 生命医科学研究センター\n研究テーマ：パスウェイ関連データの統合・可視化・解析\n趣味：オープンサイエンスコミュニティの運営"
+  },
+  {
+    "objectID": "swc-intro/index.html#露崎-弘毅ヘルパー",
+    "href": "swc-intro/index.html#露崎-弘毅ヘルパー",
+    "title": "SWC @ 千葉大学",
+    "section": "露崎 弘毅（ヘルパー）",
+    "text": "露崎 弘毅（ヘルパー）\n\n\n@kokitsuyuzaki\n\n千葉大学 医学研究院 人工知能（AI）医学 特任講師\n研究テーマ: パッケージング、（シングルセル）オミックス解析\n趣味: サーフィン、パン作り"
+  },
+  {
+    "objectID": "swc-intro/index.html#大田-達郎ヘルパー",
+    "href": "swc-intro/index.html#大田-達郎ヘルパー",
+    "title": "SWC @ 千葉大学",
+    "section": "大田 達郎（ヘルパー）",
+    "text": "大田 達郎（ヘルパー）\n\n\n@inutano\n\n千葉大学 医学研究院 人工知能（AI）医学 准教授\n研究テーマ: 生命科学データベース・データ解析プラットフォーム\n趣味: サッカー観戦"
+  },
+  {
+    "objectID": "swc-intro/index.html#行動規範",
+    "href": "swc-intro/index.html#行動規範",
+    "title": "SWC @ 千葉大学",
+    "section": "行動規範",
+    "text": "行動規範\nどなたでも気兼ねなくワークショップに参加できるように、行動規範があります。\n行動規範に反する行為があった場合は、インシデントレポートフォームで報告することができます。"
+  },
+  {
+    "objectID": "swc-intro/index.html#問題",
+    "href": "swc-intro/index.html#問題",
+    "title": "SWC @ 千葉大学",
+    "section": "問題",
+    "text": "問題\n\n\n\n研究者は最近コードを使えざるを得ない\nほとんどは独学で覚えている\nが、効率はあまり高くない"
+  },
+  {
+    "objectID": "swc-intro/index.html#swcの解決法",
+    "href": "swc-intro/index.html#swcの解決法",
+    "title": "SWC @ 千葉大学",
+    "section": "SWCの解決法",
+    "text": "SWCの解決法\n\n\n\n研究者がコミュニティを作って、互いに教え合う\n二日間にわたるワークショップ\n３−４レッスンを教える"
+  },
+  {
+    "objectID": "swc-intro/index.html#ワークショップ",
+    "href": "swc-intro/index.html#ワークショップ",
+    "title": "SWC @ 千葉大学",
+    "section": "ワークショップ",
+    "text": "ワークショップ\n\n誰でも参加できる\n無料か少額\nワークショップを教えるのに資格が必要\n改善のためのフィードバックは重視されている"
+  },
+  {
+    "objectID": "swc-intro/index.html#年以来55ヵ国で-2164ワークショップを実施",
+    "href": "swc-intro/index.html#年以来55ヵ国で-2164ワークショップを実施",
+    "title": "SWC @ 千葉大学",
+    "section": "2012年以来、55ヵ国で2,164ワークショップを実施",
+    "text": "2012年以来、55ヵ国で2,164ワークショップを実施"
+  },
+  {
+    "objectID": "swc-intro/index.html#日本ではまだ始まったばかり",
+    "href": "swc-intro/index.html#日本ではまだ始まったばかり",
+    "title": "SWC @ 千葉大学",
+    "section": "日本ではまだ始まったばかり",
+    "text": "日本ではまだ始まったばかり\n\n今回が初対面日本語ワークショップ\n\nこれから増やす予定\n\n翻訳活動も行っています"
+  },
+  {
+    "objectID": "swc-intro/index.html#参加者大募集中",
+    "href": "swc-intro/index.html#参加者大募集中",
+    "title": "SWC @ 千葉大学",
+    "section": "参加者大募集中!",
+    "text": "参加者大募集中!\n\nSlack\n\nhttps://slack-invite.carpentries.org/から Slack に参加後、 #local-japan チャンネルに入ってください\n\nGitHub: https://swcarpentry-ja.github.io/"
+  },
+  {
+    "objectID": "swc-intro/index.html#内容",
+    "href": "swc-intro/index.html#内容",
+    "title": "SWC @ 千葉大学",
+    "section": "内容",
+    "text": "内容\n\n３０日：Shell、Git\n３１日：Docker\n\n上記のリンクからレッスンの内容にアクセスできます（翻訳がまだ完了していない部分があります）"
+  },
+  {
+    "objectID": "swc-intro/index.html#swcワークショップの流れ",
+    "href": "swc-intro/index.html#swcワークショップの流れ",
+    "title": "SWC @ 千葉大学",
+    "section": "SWCワークショップの流れ",
+    "text": "SWCワークショップの流れ\n\n（軽い）スライドによる内容の説明\nライブコーディング"
+  },
+  {
+    "objectID": "swc-intro/index.html#ライブコーディングとは",
+    "href": "swc-intro/index.html#ライブコーディングとは",
+    "title": "SWC @ 千葉大学",
+    "section": "ライブコーディングとは？",
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターが打っていると同じコードを同時に自分のパソコンで打っていく\nそのコードを理解することを最も優先してください（メモをとるなどよりも）"
+  },
+  {
+    "objectID": "swc-intro/index.html#ライブコーディングとは-1",
+    "href": "swc-intro/index.html#ライブコーディングとは-1",
+    "title": "SWC @ 千葉大学",
+    "section": "ライブコーディングとは？",
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターが参加者の理解を確認する（「〜が出来ましたか？」）\nうまく出来ていれば、緑付箋をラップトップにつける\n何か困っているときは、赤付箋をラップトップにつける\n\nヘルパーが助けに行く"
+  },
+  {
+    "objectID": "swc-intro/index.html#コラボレイティブノート",
+    "href": "swc-intro/index.html#コラボレイティブノート",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレイティブ・ノート",
+    "text": "コラボレイティブ・ノート\nHackMDにコードを貼っておきます。\n\nもしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照してください。\n\n参加者も自由に書き込んでいいです"
+  },
+  {
+    "objectID": "swc-intro/index.html#フィードバックの種類",
+    "href": "swc-intro/index.html#フィードバックの種類",
+    "title": "SWC @ 千葉大学",
+    "section": "フィードバックの種類",
+    "text": "フィードバックの種類\n\n感想（１日の終わりに付箋に書いていただく）\nワークショップ前後のアンケート"
+  },
+  {
+    "objectID": "swc-intro/index.html#隣の方に自己紹介しましょう",
+    "href": "swc-intro/index.html#隣の方に自己紹介しましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "隣の方に自己紹介しましょう",
+    "text": "隣の方に自己紹介しましょう\n\n研究テーマは何ですか？\n趣味は何ですか？"
+  },
+  {
+    "objectID": "docker/index.html#docker-hubでコンテナを探す",
+    "href": "docker/index.html#docker-hubでコンテナを探す",
+    "title": "SWC @ 千葉大学",
+    "section": "Docker Hubでコンテナを探す",
+    "text": "Docker Hubでコンテナを探す\n\nDocker Hub（https://hub.docker.com）とは、様々なイメージのダウンロードが出来るウエブサイト\nGit・GitHubと同じように、DockerはDocker Hubなし（インターネットに接続なし）でも使えます"
+  },
+  {
+    "objectID": "docker/index.html#docker-hubのイメージを見てみよう",
+    "href": "docker/index.html#docker-hubのイメージを見てみよう",
+    "title": "SWC @ 千葉大学",
+    "section": "Docker Hubのイメージを見てみよう",
+    "text": "Docker Hubのイメージを見てみよう\npythonのイメージ：https://hub.docker.com/_/python\n\nDockerが提供しているオフィシャルなイメージ\n10億以上のダウンロード"
+  },
+  {
+    "objectID": "docker/index.html#イメージのタグ",
+    "href": "docker/index.html#イメージのタグ",
+    "title": "SWC @ 千葉大学",
+    "section": "イメージのタグ",
+    "text": "イメージのタグ\n\nイメージのバージョンを「タグ」と言います\n\nCONTAINER_IMAGE_NAME:TAG\n\n以下のコマンドは違うバージョンのPythonをダウンロードします：\n\ndocker image pull python:3.8\ndocker image pull python:3.8"
+  },
+  {
+    "objectID": "docker/index.html#イメージのタグ-1",
+    "href": "docker/index.html#イメージのタグ-1",
+    "title": "SWC @ 千葉大学",
+    "section": "イメージのタグ",
+    "text": "イメージのタグ\n\n:でタグをしてしないと、デフォルト（latest「最新」）が使われます\nでも、「最新」バージョンは常に変わるので、解析を再現したい場合はおすすめしません（latest以外のタグの使用を推薦）"
+  },
+  {
+    "objectID": "docker/index.html#オフィシャルイメージと-コミュニティのイメージ",
+    "href": "docker/index.html#オフィシャルイメージと-コミュニティのイメージ",
+    "title": "SWC @ 千葉大学",
+    "section": "オフィシャルイメージとコミュニティのイメージ",
+    "text": "オフィシャルイメージとコミュニティのイメージ\n\nDocker社が提供しているイメージはこのような形式：CONTAINER_IMAGE_NAME:TAG\nそれ以外のイメージ（つまり、個人が提供しているイメージ）：OWNER/CONTAINER_IMAGE_NAME:TAG\n\n自分のパソコン内で使う場合は特に形式は決まっていませんが、Docker Hubに掲載する場合はOWNER/CONTAINER_IMAGE_NAME:TAGを使わないといけません"
+  },
+  {
+    "objectID": "docker/index.html#docker-hubからのイメージを-使う条件",
+    "href": "docker/index.html#docker-hubからのイメージを-使う条件",
+    "title": "SWC @ 千葉大学",
+    "section": "Docker Hubからのイメージを使う条件",
+    "text": "Docker Hubからのイメージを使う条件\n\nイメージは定期的に更新されている\nイメージは、よく知られた企業、コミュニティ、または他のグループに関連している\nDockerfileまたはインストール内容のリストが提供されている\nイメージの使用方法に関するドキュメントがある"
+  },
+  {
+    "objectID": "docker/index.html#bioconda-からイメージの検索",
+    "href": "docker/index.html#bioconda-からイメージの検索",
+    "title": "SWC @ 千葉大学",
+    "section": "BioConda からイメージの検索",
+    "text": "BioConda からイメージの検索\n\nBioCondaはPythonとDockerのバイオインフォ系パッケージのハブ\nBioCondaに載っているイメージはBioContainersという組織が提供しています（BioContainersのサイトからも検索は可能ですが、使い勝手があまり良くない）"
+  },
+  {
+    "objectID": "docker/index.html#bioconda-からイメージの検索-1",
+    "href": "docker/index.html#bioconda-からイメージの検索-1",
+    "title": "SWC @ 千葉大学",
+    "section": "BioConda からイメージの検索",
+    "text": "BioConda からイメージの検索\n\nhttp://bioconda.github.io/から「Search」で使いたいソフトウェアを検索します\ncontainer noneというアイコンをクリック（noneとは嘘です！）\nhttps://quay.io/（Red Hat社が持っているイメージのハブ）に飛びます\nタグアイコンをクリックして、イメージのタグを選びます"
+  },
+  {
+    "objectID": "docker/index.html#dockerイメージの作り方",
+    "href": "docker/index.html#dockerイメージの作り方",
+    "title": "SWC @ 千葉大学",
+    "section": "Dockerイメージの作り方",
+    "text": "Dockerイメージの作り方\nこの部分の内容はこちらです：https://carpentries-incubator.github.io/docker-introduction/creating-container-images/index.html"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジdockerfileを記入してみましょう",
+    "href": "docker/index.html#チャレンジdockerfileを記入してみましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：Dockerfileを記入してみましょう",
+    "text": "チャレンジ：Dockerfileを記入してみましょう\nDockerfileの基本的な書き方は以下の通りです：\nFROM &lt;EXISTING IMAGE&gt;\nRUN &lt;INSTALL CMDS FROM SHELL&gt;\nCMD &lt;CMD TO RUN BY DEFAULT&gt;\nPythonをインストールするために、Dockerfileには何と書けば良いでしょうか？"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジ復習",
+    "href": "docker/index.html#チャレンジ復習",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：復習",
+    "text": "チャレンジ：復習\n\nコンテナイメージが正しく作成されたかどうかを確認するためには、どのコマンドを実行すればよいですか？\nコンテナイメージ名にタグを指定しませんでした。Dockerは自動的にどのタグを使用しましたか？\n作成したコンテナイメージを基にコンテナを実行するには、どのコマンドを使用しますか？そのようなコンテナを実行した場合、デフォルトでは何が起こりますか？「hello world」を表示するようにすることはできますか？"
   },
   {
     "objectID": "shell/index.html#データの準備",
@@ -294,339 +658,10 @@
     "text": "rm -rでフォルダを削除\n\ncpで-rを使用するのと同様に、フォルダを削除するには-rが必要です:\n\nrm -r thesis\n\n再度、注意！！"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SWC @ 千葉大学",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "ワークショップのウエブサイト\nソフトウェアカーペントリーの紹介\nUnixシェル"
-  },
-  {
-    "objectID": "swc-intro/index.html#ニッタ-ジョエルインストラクター",
-    "href": "swc-intro/index.html#ニッタ-ジョエルインストラクター",
-    "title": "SWC @ 千葉大学",
-    "section": "ニッタ ジョエル（インストラクター）",
-    "text": "ニッタ ジョエル（インストラクター）\n\n\n@joelnitta\n\n千葉大学の准教授\n研究テーマ：シダ植物の進化、生態学、ゲノム解析\n趣味：ジョギング"
-  },
-  {
-    "objectID": "swc-intro/index.html#西田-孝三インストラクター",
-    "href": "swc-intro/index.html#西田-孝三インストラクター",
-    "title": "SWC @ 千葉大学",
-    "section": "西田 孝三（インストラクター）",
-    "text": "西田 孝三（インストラクター）\n\n\n\n技術員\n理化学研究所 生命機能科学研究センター\n研究テーマ：パスウェイ関連データの統合・可視化・解析\n趣味：オープンサイエンスコミュニティの運営"
-  },
-  {
-    "objectID": "swc-intro/index.html#大田-達郎ヘルパー",
-    "href": "swc-intro/index.html#大田-達郎ヘルパー",
-    "title": "SWC @ 千葉大学",
-    "section": "大田 達郎（ヘルパー）",
-    "text": "大田 達郎（ヘルパー）\nFIXME"
-  },
-  {
-    "objectID": "swc-intro/index.html#露崎-弘毅ヘルパー",
-    "href": "swc-intro/index.html#露崎-弘毅ヘルパー",
-    "title": "SWC @ 千葉大学",
-    "section": "露崎 弘毅（ヘルパー）",
-    "text": "露崎 弘毅（ヘルパー）\nFIXME"
-  },
-  {
-    "objectID": "swc-intro/index.html#行動規範",
-    "href": "swc-intro/index.html#行動規範",
-    "title": "SWC @ 千葉大学",
-    "section": "行動規範",
-    "text": "行動規範\nどなたでも気兼ねなくワークショップに参加できるように、行動規範があります。\n行動規範に反する行為があった場合は、インシデントレポートフォームで報告することができます。"
-  },
-  {
-    "objectID": "swc-intro/index.html#問題",
-    "href": "swc-intro/index.html#問題",
-    "title": "SWC @ 千葉大学",
-    "section": "問題",
-    "text": "問題\n\n\n\n研究者は最近コードを使えざるを得ない\nほとんどは独学で覚えている\nが、効率はあまり高くない"
-  },
-  {
-    "objectID": "swc-intro/index.html#swcの解決法-swcs-solution",
-    "href": "swc-intro/index.html#swcの解決法-swcs-solution",
-    "title": "SWC @ 千葉大学",
-    "section": "SWCの解決法 SWC’s solution",
-    "text": "SWCの解決法 SWC’s solution\n\n\n\n研究者がコミュニティを作って、互いに教え合う\n二日間にわたるワークショップ\n３−４レッスンを教える"
-  },
-  {
-    "objectID": "swc-intro/index.html#ワークショップ",
-    "href": "swc-intro/index.html#ワークショップ",
-    "title": "SWC @ 千葉大学",
-    "section": "ワークショップ",
-    "text": "ワークショップ\n\n誰でも参加できる\n無料か少額\nワークショップを教えるのに資格が必要\n改善のためのフィードバックは重視されている"
-  },
-  {
-    "objectID": "swc-intro/index.html#workshops-in-51-countries-since-2012",
-    "href": "swc-intro/index.html#workshops-in-51-countries-since-2012",
-    "title": "SWC @ 千葉大学",
-    "section": "1622 workshops in 51 countries since 2012",
-    "text": "1622 workshops in 51 countries since 2012"
-  },
-  {
-    "objectID": "swc-intro/index.html#日本ではまだ始まったばかり",
-    "href": "swc-intro/index.html#日本ではまだ始まったばかり",
-    "title": "SWC @ 千葉大学",
-    "section": "日本ではまだ始まったばかり",
-    "text": "日本ではまだ始まったばかり\n\n今回が初対面日本語ワークショップ\n\nこれから増やす予定\n\n翻訳活動も行っています"
-  },
-  {
-    "objectID": "swc-intro/index.html#参加者大募集中",
-    "href": "swc-intro/index.html#参加者大募集中",
-    "title": "SWC @ 千葉大学",
-    "section": "参加者大募集中!",
-    "text": "参加者大募集中!\n\nSlack\n\nhttps://slack-invite.carpentries.org/から Slack に参加後、 #local-japan チャンネルに入ってください\n\nGitHub: https://swcarpentry-ja.github.io/"
-  },
-  {
-    "objectID": "swc-intro/index.html#内容",
-    "href": "swc-intro/index.html#内容",
-    "title": "SWC @ 千葉大学",
-    "section": "内容",
-    "text": "内容\n\n３０日：Shell、Git\n３１日：Docker\n\n上記のリンクからレッスンの内容にアクセスできます（翻訳がまだ完了していない部分があります）"
-  },
-  {
-    "objectID": "swc-intro/index.html#swcワークショップの流れ",
-    "href": "swc-intro/index.html#swcワークショップの流れ",
-    "title": "SWC @ 千葉大学",
-    "section": "SWCワークショップの流れ",
-    "text": "SWCワークショップの流れ\n\n（軽い）スライドによる内容の説明\nライブコーディング"
-  },
-  {
-    "objectID": "swc-intro/index.html#ライブコーディングとは",
-    "href": "swc-intro/index.html#ライブコーディングとは",
-    "title": "SWC @ 千葉大学",
-    "section": "ライブコーディングとは？",
-    "text": "ライブコーディングとは？\n\n\n\nインストラクターが打っていると同じコードを同時に自分のパソコンで打っていく\nそのコードを理解することを最も優先してください（メモをとるなどよりも）"
-  },
-  {
-    "objectID": "swc-intro/index.html#ライブコーディングとは-1",
-    "href": "swc-intro/index.html#ライブコーディングとは-1",
-    "title": "SWC @ 千葉大学",
-    "section": "ライブコーディングとは？",
-    "text": "ライブコーディングとは？\n\n\n\nインストラクターが参加者の理解を確認する（「〜が出来ましたか？」）\nうまく出来ていれば、緑付箋をラップトップにつける\n何か困っているときは、赤付箋をラップトップにつける\n\nヘルパーが助けに行く"
-  },
-  {
-    "objectID": "swc-intro/index.html#ライブコーディングとは-2",
-    "href": "swc-intro/index.html#ライブコーディングとは-2",
-    "title": "SWC @ 千葉大学",
-    "section": "ライブコーディングとは？",
-    "text": "ライブコーディングとは？\n\nインストラクターが聞かなくても、何か問題があった時に声をかけてください"
-  },
-  {
-    "objectID": "swc-intro/index.html#コラボレイティブノート",
-    "href": "swc-intro/index.html#コラボレイティブノート",
-    "title": "SWC @ 千葉大学",
-    "section": "コラボレイティブ・ノート",
-    "text": "コラボレイティブ・ノート\nHackMDにコードを貼っておきます。\n\nもしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照してください。\n\n参加者も自由に書き込んでいいです"
-  },
-  {
-    "objectID": "swc-intro/index.html#フィードバックの種類",
-    "href": "swc-intro/index.html#フィードバックの種類",
-    "title": "SWC @ 千葉大学",
-    "section": "フィードバックの種類",
-    "text": "フィードバックの種類\n\n感想（１日の終わりに付箋に書いていただく）\nワークショップ前後のアンケート"
-  },
-  {
-    "objectID": "swc-intro/index.html#隣の方に自己紹介しましょう",
-    "href": "swc-intro/index.html#隣の方に自己紹介しましょう",
-    "title": "SWC @ 千葉大学",
-    "section": "隣の方に自己紹介しましょう",
-    "text": "隣の方に自己紹介しましょう\n\n研究テーマは何ですか？\n趣味は何ですか？"
-  },
-  {
-    "objectID": "swc-intro/index.html#workshops-in-55-countries-since-2012",
-    "href": "swc-intro/index.html#workshops-in-55-countries-since-2012",
-    "title": "SWC @ 千葉大学",
-    "section": "2164 workshops in 55 countries since 2012",
-    "text": "2164 workshops in 55 countries since 2012"
-  },
-  {
-    "objectID": "swc-intro/index.html#ニッタ-ジョエル-インストラクター",
-    "href": "swc-intro/index.html#ニッタ-ジョエル-インストラクター",
-    "title": "SWC @ 千葉大学",
-    "section": "ニッタ ジョエル（インストラクター）",
-    "text": "ニッタ ジョエル（インストラクター）\n\n\n@joelnitta\n\n千葉大学の准教授\n研究テーマ：シダ植物の進化、生態学、ゲノム解析\n趣味：ジョギング"
-  },
-  {
-    "objectID": "swc-intro/index.html#年以来55ヵ国で2164ワークショップを実施",
-    "href": "swc-intro/index.html#年以来55ヵ国で2164ワークショップを実施",
-    "title": "SWC @ 千葉大学",
-    "section": "2012年以来、55ヵ国で2,164ワークショップを実施",
-    "text": "2012年以来、55ヵ国で2,164ワークショップを実施"
-  },
-  {
-    "objectID": "swc-intro/index.html#年以来55ヵ国で-2164ワークショップを実施",
-    "href": "swc-intro/index.html#年以来55ヵ国で-2164ワークショップを実施",
-    "title": "SWC @ 千葉大学",
-    "section": "2012年以来、55ヵ国で2,164ワークショップを実施",
-    "text": "2012年以来、55ヵ国で2,164ワークショップを実施"
-  },
-  {
-    "objectID": "swc-intro/index.html#swcの解決法",
-    "href": "swc-intro/index.html#swcの解決法",
-    "title": "SWC @ 千葉大学",
-    "section": "SWCの解決法",
-    "text": "SWCの解決法\n\n\n\n研究者がコミュニティを作って、互いに教え合う\n二日間にわたるワークショップ\n３−４レッスンを教える"
-  },
-  {
-    "objectID": "git/index.html#認証の設定",
-    "href": "git/index.html#認証の設定",
-    "title": "SWC @ 千葉大学",
-    "section": "認証の設定",
-    "text": "認証の設定\n\nリモートリポジトリに接続する前に、自分のコンピュータが GitHub に認証される方法を設定する必要があります。\nこれにより、GitHub はあなたのコンピュータからのアクセスを信頼できるようになります。"
-  },
-  {
-    "objectID": "git/index.html#ssh-プロトコルとは",
-    "href": "git/index.html#ssh-プロトコルとは",
-    "title": "SWC @ 千葉大学",
-    "section": "SSH プロトコルとは？",
-    "text": "SSH プロトコルとは？\n\nコマンドラインでのアクセスを認証するために一般的に使用される方法を設定します。\nこの方法は「Secure Shell Protocol（SSH）」と呼ばれます。\nSSH は、暗号化されたネットワークプロトコルで、通常は安全でないネットワークを使用してコンピュータ間の安全な通信を可能にします。"
-  },
-  {
-    "objectID": "git/index.html#ssh-鍵ペアの仕組み",
-    "href": "git/index.html#ssh-鍵ペアの仕組み",
-    "title": "SWC @ 千葉大学",
-    "section": "SSH 鍵ペアの仕組み",
-    "text": "SSH 鍵ペアの仕組み\n\nSSH は「鍵ペア」を使用します。\n鍵ペアはアクセスを検証するために連携して動作する2つの鍵です。\n一つは公開鍵（public key）、もう一つは秘密鍵（private key）と呼ばれます。"
-  },
-  {
-    "objectID": "git/index.html#公開鍵と秘密鍵の例え",
-    "href": "git/index.html#公開鍵と秘密鍵の例え",
-    "title": "SWC @ 千葉大学",
-    "section": "公開鍵と秘密鍵の例え",
-    "text": "公開鍵と秘密鍵の例え\n\n公開鍵を南京錠と考えてください。\n秘密鍵はその南京錠を開ける鍵です。\n公開鍵を GitHub アカウントに設定し、「この南京錠で通信をロックしてください」とします。\nこれにより、秘密鍵を持つコンピュータだけが通信を解読し、Git コマンドを GitHub アカウントとして送信できます。"
-  },
-  {
-    "objectID": "git/index.html#ssh-鍵の存在を確認する",
-    "href": "git/index.html#ssh-鍵の存在を確認する",
-    "title": "SWC @ 千葉大学",
-    "section": "SSH 鍵の存在を確認する",
-    "text": "SSH 鍵の存在を確認する\nls -al ~/.ssh"
-  },
-  {
-    "objectID": "git/index.html#ssh-鍵の作成",
-    "href": "git/index.html#ssh-鍵の作成",
-    "title": "SWC @ 千葉大学",
-    "section": "SSH 鍵の作成",
-    "text": "SSH 鍵の作成\nssh-keygen -t ed25519 -C \"vlad@tran.sylvan.ia\"\nvlad@tran.sylvan.iaには、自分のメールアドレスを入力してください（公開されているGitHubリポジトリを使用する場合、このメールアドレスも公開されることになります）"
-  },
-  {
-    "objectID": "git/index.html#ssh-鍵の作成-1",
-    "href": "git/index.html#ssh-鍵の作成-1",
-    "title": "SWC @ 千葉大学",
-    "section": "SSH 鍵の作成",
-    "text": "SSH 鍵の作成\nGenerating public/private ed25519 key pair.\nEnter file in which to save the key (/c/Users/Vlad Dracula/.ssh/id_ed25519):\nデフォルト設定で良いので、リターンキーを押します。"
-  },
-  {
-    "objectID": "git/index.html#ssh-鍵の作成-2",
-    "href": "git/index.html#ssh-鍵の作成-2",
-    "title": "SWC @ 千葉大学",
-    "section": "SSH 鍵の作成",
-    "text": "SSH 鍵の作成\nCreated directory '/c/Users/Vlad Dracula/.ssh'.\nEnter passphrase (empty for no passphrase):\nパスワードを設定します（空欄にすると、パスワードなしになります）。パスワードを設定すると、GitHubを使用するたびに入力が必要になります。"
-  },
-  {
-    "objectID": "git/index.html#公開鍵をgithubに置く",
-    "href": "git/index.html#公開鍵をgithubに置く",
-    "title": "SWC @ 千葉大学",
-    "section": "公開鍵をGitHubに置く",
-    "text": "公開鍵をGitHubに置く\ncat ~/.ssh/id_ed25519.pub\n\n右上隅にあるプロファイルの画像をクリックし、次に[設定]をクリックします。\nサイドバーの [アクセス] セクションで、 [ SSH キーと GPG キー] をクリックします\nNew SSH key または Add SSH key をクリックします\n公開鍵をペストし、覚えやすい名前を設定します"
-  },
-  {
-    "objectID": "git/index.html#sshでログイン",
-    "href": "git/index.html#sshでログイン",
-    "title": "SWC @ 千葉大学",
-    "section": "SSHでログイン",
-    "text": "SSHでログイン\nssh -T git@github.com"
-  },
-  {
-    "objectID": "git/index.html#リモートリポジトリを作成する",
-    "href": "git/index.html#リモートリポジトリを作成する",
-    "title": "SWC @ 千葉大学",
-    "section": "リモートリポジトリを作成する",
-    "text": "リモートリポジトリを作成する"
-  },
-  {
-    "objectID": "git/index.html#リモートリポジトリを追加する",
-    "href": "git/index.html#リモートリポジトリを追加する",
-    "title": "SWC @ 千葉大学",
-    "section": "リモートリポジトリを追加する",
-    "text": "リモートリポジトリを追加する\ngit remote add originでリポジトリを追加する\ngit remote add origin git@github.com:vlad/planets.git\ngit remote -vで確認する\ngit remote -v"
-  },
-  {
-    "objectID": "git/index.html#リモートリポジトリに変更をプッシュする",
-    "href": "git/index.html#リモートリポジトリに変更をプッシュする",
-    "title": "SWC @ 千葉大学",
-    "section": "リモートリポジトリに変更をプッシュする",
-    "text": "リモートリポジトリに変更をプッシュする\ngit push origin main"
-  },
-  {
-    "objectID": "git/index.html#githubを介して共同作業してみよう",
-    "href": "git/index.html#githubを介して共同作業してみよう",
-    "title": "SWC @ 千葉大学",
-    "section": "GitHubを介して共同作業してみよう",
-    "text": "GitHubを介して共同作業してみよう\n\n今回の課題は、ペアを組んでやります\n一人は「オーナー」、もう一人は「コラボレーター」\nコラボレーターの目標は、オーナーのリポジトリに変更を加えることです。\n最後に役割を交代するので、両方の人がオーナーとコラボレーターの役割を果たします。"
-  },
-  {
-    "objectID": "git/index.html#コラボレーターにアクセス権限を与える",
-    "href": "git/index.html#コラボレーターにアクセス権限を与える",
-    "title": "SWC @ 千葉大学",
-    "section": "コラボレーターにアクセス権限を与える",
-    "text": "コラボレーターにアクセス権限を与える\n\nGitHubのリポジトリページで「Settings」ボタンをクリックします。\n「Collaborators」を選択します。\n「Add people」をクリックし、パートナーのユーザー名を入力します。"
-  },
-  {
-    "objectID": "git/index.html#コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
-    "href": "git/index.html#コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
-    "title": "SWC @ 千葉大学",
-    "section": "コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
-    "text": "コラボレーターがオーナーのリポジトリへのアクセスを受け入れる\n\nhttps://github.com/notifications にアクセスするか、メール通知を確認します。\nオーナーのリポジトリへのアクセスを受け入れます。"
-  },
-  {
-    "objectID": "git/index.html#オーナーのリポジトリをクローンする",
-    "href": "git/index.html#オーナーのリポジトリをクローンする",
-    "title": "SWC @ 千葉大学",
-    "section": "オーナーのリポジトリをクローンする",
-    "text": "オーナーのリポジトリをクローンする\n\nコラボレーターはオーナーのリポジトリのコピーを自分のマシンにダウンロードします。（クローンする）\n自分の planets.git バージョンを上書きしないように、オーナーのリポジトリを別の場所にクローンします。"
-  },
-  {
-    "objectID": "git/index.html#オーナーのリポジトリをクローンする-1",
-    "href": "git/index.html#オーナーのリポジトリをクローンする-1",
-    "title": "SWC @ 千葉大学",
-    "section": "オーナーのリポジトリをクローンする",
-    "text": "オーナーのリポジトリをクローンする\nデスクトップフォルダにクローンする場合:\n$ git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets\nvlad をオーナーのユーザー名に置き換えます。\nクローンパス（~/Desktop/vlad-planets）を指定しない場合は、自分の planets フォルダ内にクローンされるので、最初にデスクトップフォルダに移動してください。"
-  },
-  {
-    "objectID": "git/index.html#クローンしたリポジトリーに変更を加える",
-    "href": "git/index.html#クローンしたリポジトリーに変更を加える",
-    "title": "SWC @ 千葉大学",
-    "section": "クローンしたリポジトリーに変更を加える",
-    "text": "クローンしたリポジトリーに変更を加える\n\nコラボレーターは、オーナーのリポジトリのクローンで変更を加えることができます。例えば:\n\ncd ~/Desktop/vlad-planets\nnano pluto.txt\ngit add pluto.txt\ngit commit -m \"Add notes about Pluto\""
-  },
-  {
-    "objectID": "git/index.html#変更を加えたファイルをリモートに送るプッシュ",
-    "href": "git/index.html#変更を加えたファイルをリモートに送るプッシュ",
-    "title": "SWC @ 千葉大学",
-    "section": "変更を加えたファイルをリモートに送る（プッシュ）",
-    "text": "変更を加えたファイルをリモートに送る（プッシュ）\ngit push origin main"
-  },
-  {
-    "objectID": "git/index.html#オーナーのリポジトリを確認",
-    "href": "git/index.html#オーナーのリポジトリを確認",
-    "title": "SWC @ 千葉大学",
-    "section": "オーナーのリポジトリを確認",
-    "text": "オーナーのリポジトリを確認\n\nオーナーのリポジトリを再確認し、コラボレーターが行った新しいコミットを確認します。\nブラウザをリフレッシュする必要があるかもしれません"
-  },
-  {
-    "objectID": "git/index.html#オーナーのローカルなリポジトリの更新",
-    "href": "git/index.html#オーナーのローカルなリポジトリの更新",
-    "title": "SWC @ 千葉大学",
-    "section": "オーナーのローカルなリポジトリの更新",
-    "text": "オーナーのローカルなリポジトリの更新\n\nオーナーが行います：\n\ngit pull origin main\n\nこれで、三つのリポジトリ（オーナー、オーナーのリモート、コラボレーター）が同期されました"
-  },
-  {
-    "objectID": "git/index.html#もう一回しましょう",
-    "href": "git/index.html#もう一回しましょう",
-    "title": "SWC @ 千葉大学",
-    "section": "もう一回しましょう",
-    "text": "もう一回しましょう\n\n今度は役割を交代して、もう一度やってみましょう"
+    "text": "About this site"
   }
 ]

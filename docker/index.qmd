@@ -15,7 +15,91 @@ execute:
 
 ## Docker Hubでコンテナを探す
 
-- Docker Hub（<>）とは、様々なイメージのダウンロードが出来るウエブサイト
+- Docker Hub（<https://hub.docker.com>）とは、様々なイメージのダウンロードが出来るウエブサイト
 
-- Git・GitHubと同じように、DockerはDocker Hub無しでも使える
+- Git・GitHubと同じように、DockerはDocker Hubなし（インターネットに接続なし）でも使えます
+
+## Docker Hubのイメージを見てみよう
+
+pythonのイメージ：<https://hub.docker.com/_/python>
+
+- Dockerが提供しているオフィシャルなイメージ
+- 10億以上のダウンロード
+
+## イメージのタグ
+
+- イメージのバージョンを「タグ」と言います
+
+`CONTAINER_IMAGE_NAME:TAG`
+
+- 以下のコマンドは違うバージョンのPythonをダウンロードします：
+
+```bash
+docker image pull python:3.8
+```
+
+```bash
+docker image pull python:3.8
+```
+
+## イメージのタグ
+
+- `:`でタグをしてしないと、デフォルト（`latest`「最新」）が使われます
+
+- でも、「最新」バージョンは常に変わるので、解析を再現したい場合はおすすめしません（`latest`以外のタグの使用を推薦）
+
+## オフィシャルイメージと<br>コミュニティのイメージ {.smaller}
+
+- Docker社が提供しているイメージはこのような形式：`CONTAINER_IMAGE_NAME:TAG`
+
+- それ以外のイメージ（つまり、個人が提供しているイメージ）：`OWNER/CONTAINER_IMAGE_NAME:TAG`
+
+自分のパソコン内で使う場合は特に形式は決まっていませんが、Docker Hubに掲載する場合は`OWNER/CONTAINER_IMAGE_NAME:TAG`を使わないといけません
+
+## Docker Hubからのイメージを<br>使う条件
+
+- イメージは定期的に更新されている
+- イメージは、よく知られた企業、コミュニティ、または他のグループに関連している
+- Dockerfileまたはインストール内容のリストが提供されている
+- イメージの使用方法に関するドキュメントがある
+
+## BioConda からイメージの検索
+
+- [BioConda](http://bioconda.github.io)はPythonとDockerのバイオインフォ系パッケージのハブ
+
+- BioCondaに載っているイメージは[BioContainers](https://biocontainers.pro/)という組織が提供しています（BioContainersのサイトからも検索は可能ですが、使い勝手があまり良くない）
+
+## BioConda からイメージの検索 {.smaller}
+
+- <http://bioconda.github.io/>から「Search」で使いたいソフトウェアを検索します
+
+- `container none`というアイコンをクリック（`none`とは嘘です！）
+
+- <https://quay.io/>（Red Hat社が持っているイメージのハブ）に飛びます
+
+- タグアイコンをクリックして、イメージのタグを選びます
+
+![](../images/container_none.png){height=50px}
+
+## Dockerイメージの作り方
+
+この部分の内容はこちらです：<https://carpentries-incubator.github.io/docker-introduction/creating-container-images/index.html>
+
+## チャレンジ：Dockerfileを記入してみましょう
+
+`Dockerfile`の基本的な書き方は以下の通りです：
+
+```
+FROM <EXISTING IMAGE>
+RUN <INSTALL CMDS FROM SHELL>
+CMD <CMD TO RUN BY DEFAULT>
+```
+
+Pythonをインストールするために、`Dockerfile`には何と書けば良いでしょうか？
+
+## チャレンジ：復習
+
+- コンテナイメージが正しく作成されたかどうかを確認するためには、どのコマンドを実行すればよいですか？
+- コンテナイメージ名にタグを指定しませんでした。Dockerは自動的にどのタグを使用しましたか？
+- 作成したコンテナイメージを基にコンテナを実行するには、どのコマンドを使用しますか？そのようなコンテナを実行した場合、デフォルトでは何が起こりますか？「hello world」を表示するようにすることはできますか？
 

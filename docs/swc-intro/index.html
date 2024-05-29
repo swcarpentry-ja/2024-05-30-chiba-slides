@@ -8,9 +8,9 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.549">
+  <meta name="generator" content="quarto-1.3.450">
 
-  <title>SWC @ 千葉大学</title>
+  <title>SWC @ 千葉大学 – index</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -156,8 +156,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -336,7 +335,7 @@
 <section id="アウトライン" class="title-slide slide level1 center">
 <h1>アウトライン</h1>
 <ul>
-<li>スタフの自己紹介</li>
+<li>スタッフの自己紹介</li>
 <li>ソフトウェアカーペントリーの紹介</li>
 <li>ワークショップの流れ</li>
 <li>Ice Breaker</li>
@@ -344,8 +343,8 @@
 </section>
 
 <section>
-<section id="スタフの自己紹介" class="title-slide slide level1 center">
-<h1>スタフの自己紹介</h1>
+<section id="スタッフの自己紹介" class="title-slide slide level1 center">
+<h1>スタッフの自己紹介</h1>
 
 </section>
 <section id="ニッタ-ジョエル-インストラクター" class="slide level2">
@@ -368,8 +367,8 @@
 <div class="columns">
 <div class="column">
 <ul>
-<li><p>技術員</p></li>
-<li><p>理化学研究所 生命機能科学研究センター</p></li>
+<li><p>パートタイマー</p></li>
+<li><p>東京農工大学 工学部生命工学科、理化学研究所 生命医科学研究センター</p></li>
 <li><p>研究テーマ：パスウェイ関連データの統合・可視化・解析</p></li>
 <li><p>趣味：オープンサイエンスコミュニティの運営</p></li>
 </ul>
@@ -378,13 +377,35 @@
 </div>
 </div>
 </section>
-<section id="大田-達郎ヘルパー" class="slide level2">
-<h2>大田 達郎（ヘルパー）</h2>
-<p>FIXME</p>
-</section>
 <section id="露崎-弘毅ヘルパー" class="slide level2">
 <h2>露崎 弘毅（ヘルパー）</h2>
-<p>FIXME</p>
+<div class="columns">
+<div class="column">
+<p><a href="https://github.com/kokitsuyuzaki"><code>@kokitsuyuzaki</code></a></p>
+<ul>
+<li><p>千葉大学 医学研究院 人工知能（AI）医学 特任講師</p></li>
+<li><p>研究テーマ: パッケージング、（シングルセル）オミックス解析</p></li>
+<li><p>趣味: サーフィン、パン作り</p></li>
+</ul>
+</div><div class="column">
+<p><img data-src="../images/helper_koki.jpeg" height="350"></p>
+</div>
+</div>
+</section>
+<section id="大田-達郎ヘルパー" class="slide level2">
+<h2>大田 達郎（ヘルパー）</h2>
+<div class="columns">
+<div class="column">
+<p><a href="https://github.com/inutano"><code>@inutano</code></a></p>
+<ul>
+<li><p>千葉大学 医学研究院 人工知能（AI）医学 准教授</p></li>
+<li><p>研究テーマ: 生命科学データベース・データ解析プラットフォーム</p></li>
+<li><p>趣味: サッカー観戦</p></li>
+</ul>
+</div><div class="column">
+<p><img data-src="../images/images/Tazro-Ohta.jpg" height="350"></p>
+</div>
+</div>
 </section>
 <section id="行動規範" class="slide level2">
 <h2>行動規範</h2>
@@ -527,7 +548,7 @@
 <h2>フィードバックの種類</h2>
 <ul>
 <li><p>感想（１日の終わりに付箋に書いていただく）</p></li>
-<li><p>ワークショップ前後の<a href="https://carpentries.typeform.com/to/CvmMM8re?slug=2021-04-02-todai-online-ja">アンケート</a></p></li>
+<li><p>ワークショップ前後の<a href="https://carpentries.typeform.com/to/CvmMM8re?slug=2024-05-30-chiba">アンケート</a></p></li>
 </ul>
 </section></section>
 <section>
@@ -542,10 +563,8 @@
 <li><p>趣味は何ですか？</p></li>
 </ul>
 
-<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
-</div>
 </div>
 </section></section>
     </div>
@@ -574,6 +593,7 @@
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -834,9 +854,10 @@
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -846,17 +867,8 @@
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

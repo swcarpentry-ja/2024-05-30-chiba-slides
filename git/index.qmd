@@ -11,10 +11,6 @@ execute:
 
 [SWC @ 千葉大学](https://swcarpentry-ja.github.io/2024-05-30-chiba/)
 
-2024-05-30
-
-ニッタ ジョエル
-
 <https://swcarpentry-ja.github.io/2024-05-30-chiba/git>
 
 # GitHub における<br>リモート

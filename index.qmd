@@ -8,3 +8,7 @@ toc: false
 - [ソフトウェアカーペントリーの紹介](swc-intro/index.qmd)
 
 - [Unixシェル](shell/index.qmd)
+
+- [git](git/index.qmd)
+
+- [Docker](docker/index.qmd)

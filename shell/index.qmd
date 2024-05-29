@@ -11,7 +11,7 @@ execute:
 
 [SWC @ 千葉大学](https://swcarpentry-ja.github.io/2024-05-30-chiba/)
 
-<https://swcarpentry-ja.github.io/2024-05-30-chiba/bash>
+<https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/shell>
 
 # [はじめに](https://swcarpentry-ja.github.io/shell-novice/index.html)
 

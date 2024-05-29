@@ -58,10 +58,6 @@ execute:
 :::
 :::
 
-## 大田 達郎（ヘルパー）
-
-FIXME
-
 ## 露崎 弘毅（ヘルパー）
 
 ::: {.columns}
@@ -78,6 +74,24 @@ FIXME
 ![](../images/helper_koki.jpeg){height=350px}
 :::
 :::
+
+## 大田 達郎（ヘルパー）
+
+::: {.columns}
+::: {.column}
+[`@inutano`](https://github.com/inutano)
+
+- 千葉大学 医学研究院 人工知能（AI）医学 准教授
+
+- 研究テーマ: 生命科学データベース・データ解析プラットフォーム
+
+- 趣味: サッカー観戦
+:::
+::: {.column}
+![](../images/images/Tazro-Ohta.jpg){height=350px}
+:::
+:::
+
 
 ## 行動規範
 

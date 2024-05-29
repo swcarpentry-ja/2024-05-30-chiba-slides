@@ -20,7 +20,7 @@ execute:
 - スタッフの自己紹介
 - ソフトウェアカーペントリーの紹介
 - ワークショップの流れ
-- Ice Breaker
+- アイスブレーカー
 
 # スタッフの自己紹介
 
@@ -116,7 +116,7 @@ execute:
 :::
 :::
 
-## SWCの解決法
+## ソフトウェアカーペントリー（SWC）の解決法
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -125,6 +125,9 @@ execute:
 - 二日間にわたるワークショップ
 
 - ３−４レッスンを教えます
+
+<https://software-carpentry.org/>
+
 :::
 ::: {.column width="40%"}
 <img src="https://4.bp.blogspot.com/-v-d7JYMZJn0/VvKZKMuZhzI/AAAAAAAA5FQ/p8m3U0QRZ8kI8mbkOv0uMEZrwT7F5Baiw/s450/seminor_woman.png" alt="drawing" height="300"/>
@@ -170,7 +173,7 @@ execute:
 
 - ３１日：[Docker](https://carpentries-incubator.github.io/docker-introduction)
 
-上記のリンクからレッスンの内容にアクセスできます（翻訳がまだ完了していない部分があります）
+上記のリンクからレッスンの内容にアクセスできます<br>（翻訳がまだ完了していない部分があります）
 
 ## SWCワークショップの流れ
 
@@ -184,7 +187,7 @@ execute:
 ::: {.column}
 - インストラクターが打っていると同じコードを同時に**自分のパソコンで<br>打っていく**
 
-- そのコードを**理解すること**を最も優先して下さい（メモをとるなどよりも）
+- そのコードを**理解すること**を最も優先して下さい<br>（メモをとるなどよりも）
 :::
 ::: {.column}
 ![](https://datacarpentry.org/images//involved2.jpg)
@@ -226,7 +229,7 @@ execute:
 
 - ワークショップ前後の[アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2024-05-30-chiba)
 
-# Ice breaker
+# アイスブレーカー
 
 ## 隣の方に自己紹介しましょう
 

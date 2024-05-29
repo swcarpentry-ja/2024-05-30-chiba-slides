@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "SWC @ 千葉大学",
     "section": "",
-    "text": "ワークショップのウエブサイト\nソフトウェアカーペントリーの紹介\nUnixシェル"
+    "text": "ワークショップのウエブサイト\nソフトウェアカーペントリーの紹介\nUnixシェル\ngit\nDocker"
   },
   {
     "objectID": "git/index.html#認証の設定",
@@ -305,7 +305,77 @@
     "href": "docker/index.html#docker-hubでコンテナを探す",
     "title": "SWC @ 千葉大学",
     "section": "Docker Hubでコンテナを探す",
-    "text": "Docker Hubでコンテナを探す\n\nDocker Hub（&lt;&gt;）とは、様々なイメージのダウンロードが出来るウエブサイト\nGit・GitHubと同じように、DockerはDocker Hub無しでも使える"
+    "text": "Docker Hubでコンテナを探す\n\nDocker Hub（https://hub.docker.com）とは、様々なイメージのダウンロードが出来るウエブサイト\nGit・GitHubと同じように、DockerはDocker Hubなし（インターネットに接続なし）でも使えます"
+  },
+  {
+    "objectID": "docker/index.html#docker-hubのイメージを見てみよう",
+    "href": "docker/index.html#docker-hubのイメージを見てみよう",
+    "title": "SWC @ 千葉大学",
+    "section": "Docker Hubのイメージを見てみよう",
+    "text": "Docker Hubのイメージを見てみよう\npythonのイメージ：https://hub.docker.com/_/python\n\nDockerが提供しているオフィシャルなイメージ\n10億以上のダウンロード"
+  },
+  {
+    "objectID": "docker/index.html#イメージのタグ",
+    "href": "docker/index.html#イメージのタグ",
+    "title": "SWC @ 千葉大学",
+    "section": "イメージのタグ",
+    "text": "イメージのタグ\n\nイメージのバージョンを「タグ」と言います\n\nCONTAINER_IMAGE_NAME:TAG\n\n以下のコマンドは違うバージョンのPythonをダウンロードします：\n\ndocker image pull python:3.8\ndocker image pull python:3.8"
+  },
+  {
+    "objectID": "docker/index.html#イメージのタグ-1",
+    "href": "docker/index.html#イメージのタグ-1",
+    "title": "SWC @ 千葉大学",
+    "section": "イメージのタグ",
+    "text": "イメージのタグ\n\n:でタグをしてしないと、デフォルト（latest「最新」）が使われます\nでも、「最新」バージョンは常に変わるので、解析を再現したい場合はおすすめしません（latest以外のタグの使用を推薦）"
+  },
+  {
+    "objectID": "docker/index.html#オフィシャルイメージと-コミュニティのイメージ",
+    "href": "docker/index.html#オフィシャルイメージと-コミュニティのイメージ",
+    "title": "SWC @ 千葉大学",
+    "section": "オフィシャルイメージとコミュニティのイメージ",
+    "text": "オフィシャルイメージとコミュニティのイメージ\n\nDocker社が提供しているイメージはこのような形式：CONTAINER_IMAGE_NAME:TAG\nそれ以外のイメージ（つまり、個人が提供しているイメージ）：OWNER/CONTAINER_IMAGE_NAME:TAG\n\n自分のパソコン内で使う場合は特に形式は決まっていませんが、Docker Hubに掲載する場合はOWNER/CONTAINER_IMAGE_NAME:TAGを使わないといけません"
+  },
+  {
+    "objectID": "docker/index.html#docker-hubからのイメージを-使う条件",
+    "href": "docker/index.html#docker-hubからのイメージを-使う条件",
+    "title": "SWC @ 千葉大学",
+    "section": "Docker Hubからのイメージを使う条件",
+    "text": "Docker Hubからのイメージを使う条件\n\nイメージは定期的に更新されている\nイメージは、よく知られた企業、コミュニティ、または他のグループに関連している\nDockerfileまたはインストール内容のリストが提供されている\nイメージの使用方法に関するドキュメントがある"
+  },
+  {
+    "objectID": "docker/index.html#bioconda-からイメージの検索",
+    "href": "docker/index.html#bioconda-からイメージの検索",
+    "title": "SWC @ 千葉大学",
+    "section": "BioConda からイメージの検索",
+    "text": "BioConda からイメージの検索\n\nBioCondaはPythonとDockerのバイオインフォ系パッケージのハブ\nBioCondaに載っているイメージはBioContainersという組織が提供しています（BioContainersのサイトからも検索は可能ですが、使い勝手があまり良くない）"
+  },
+  {
+    "objectID": "docker/index.html#bioconda-からイメージの検索-1",
+    "href": "docker/index.html#bioconda-からイメージの検索-1",
+    "title": "SWC @ 千葉大学",
+    "section": "BioConda からイメージの検索",
+    "text": "BioConda からイメージの検索\n\nhttp://bioconda.github.io/から「Search」で使いたいソフトウェアを検索します\ncontainer noneというアイコンをクリック（noneとは嘘です！）\nhttps://quay.io/（Red Hat社が持っているイメージのハブ）に飛びます\nタグアイコンをクリックして、イメージのタグを選びます"
+  },
+  {
+    "objectID": "docker/index.html#dockerイメージの作り方",
+    "href": "docker/index.html#dockerイメージの作り方",
+    "title": "SWC @ 千葉大学",
+    "section": "Dockerイメージの作り方",
+    "text": "Dockerイメージの作り方\nこの部分の内容はこちらです：https://carpentries-incubator.github.io/docker-introduction/creating-container-images/index.html"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジdockerfileを記入してみましょう",
+    "href": "docker/index.html#チャレンジdockerfileを記入してみましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：Dockerfileを記入してみましょう",
+    "text": "チャレンジ：Dockerfileを記入してみましょう\nDockerfileの基本的な書き方は以下の通りです：\nFROM &lt;EXISTING IMAGE&gt;\nRUN &lt;INSTALL CMDS FROM SHELL&gt;\nCMD &lt;CMD TO RUN BY DEFAULT&gt;\nPythonをインストールするために、Dockerfileには何と書けば良いでしょうか？"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジ復習",
+    "href": "docker/index.html#チャレンジ復習",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：復習",
+    "text": "チャレンジ：復習\n\nコンテナイメージが正しく作成されたかどうかを確認するためには、どのコマンドを実行すればよいですか？\nコンテナイメージ名にタグを指定しませんでした。Dockerは自動的にどのタグを使用しましたか？\n作成したコンテナイメージを基にコンテナを実行するには、どのコマンドを使用しますか？そのようなコンテナを実行した場合、デフォルトでは何が起こりますか？「hello world」を表示するようにすることはできますか？"
   },
   {
     "objectID": "shell/index.html#データの準備",

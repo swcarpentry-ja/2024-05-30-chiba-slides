@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="../styles.css">
@@ -335,8 +400,89 @@
 <section id="docker-hubでコンテナを探す" class="slide level2">
 <h2>Docker Hubでコンテナを探す</h2>
 <ul>
-<li><p>Docker Hub（&lt;&gt;）とは、様々なイメージのダウンロードが出来るウエブサイト</p></li>
-<li><p>Git・GitHubと同じように、DockerはDocker Hub無しでも使える</p></li>
+<li><p>Docker Hub（<a href="https://hub.docker.com" class="uri">https://hub.docker.com</a>）とは、様々なイメージのダウンロードが出来るウエブサイト</p></li>
+<li><p>Git・GitHubと同じように、DockerはDocker Hubなし（インターネットに接続なし）でも使えます</p></li>
+</ul>
+</section>
+<section id="docker-hubのイメージを見てみよう" class="slide level2">
+<h2>Docker Hubのイメージを見てみよう</h2>
+<p>pythonのイメージ：<a href="https://hub.docker.com/_/python" class="uri">https://hub.docker.com/_/python</a></p>
+<ul>
+<li>Dockerが提供しているオフィシャルなイメージ</li>
+<li>10億以上のダウンロード</li>
+</ul>
+</section>
+<section id="イメージのタグ" class="slide level2">
+<h2>イメージのタグ</h2>
+<ul>
+<li>イメージのバージョンを「タグ」と言います</li>
+</ul>
+<p><code>CONTAINER_IMAGE_NAME:TAG</code></p>
+<ul>
+<li>以下のコマンドは違うバージョンのPythonをダウンロードします：</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="ex">docker</span> image pull python:3.8</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">docker</span> image pull python:3.8</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="イメージのタグ-1" class="slide level2">
+<h2>イメージのタグ</h2>
+<ul>
+<li><p><code>:</code>でタグをしてしないと、デフォルト（<code>latest</code>「最新」）が使われます</p></li>
+<li><p>でも、「最新」バージョンは常に変わるので、解析を再現したい場合はおすすめしません（<code>latest</code>以外のタグの使用を推薦）</p></li>
+</ul>
+</section>
+<section id="オフィシャルイメージと-コミュニティのイメージ" class="slide level2 smaller">
+<h2>オフィシャルイメージと<br>コミュニティのイメージ</h2>
+<ul>
+<li><p>Docker社が提供しているイメージはこのような形式：<code>CONTAINER_IMAGE_NAME:TAG</code></p></li>
+<li><p>それ以外のイメージ（つまり、個人が提供しているイメージ）：<code>OWNER/CONTAINER_IMAGE_NAME:TAG</code></p></li>
+</ul>
+<p>自分のパソコン内で使う場合は特に形式は決まっていませんが、Docker Hubに掲載する場合は<code>OWNER/CONTAINER_IMAGE_NAME:TAG</code>を使わないといけません</p>
+</section>
+<section id="docker-hubからのイメージを-使う条件" class="slide level2">
+<h2>Docker Hubからのイメージを<br>使う条件</h2>
+<ul>
+<li>イメージは定期的に更新されている</li>
+<li>イメージは、よく知られた企業、コミュニティ、または他のグループに関連している</li>
+<li>Dockerfileまたはインストール内容のリストが提供されている</li>
+<li>イメージの使用方法に関するドキュメントがある</li>
+</ul>
+</section>
+<section id="bioconda-からイメージの検索" class="slide level2">
+<h2>BioConda からイメージの検索</h2>
+<ul>
+<li><p><a href="http://bioconda.github.io">BioConda</a>はPythonとDockerのバイオインフォ系パッケージのハブ</p></li>
+<li><p>BioCondaに載っているイメージは<a href="https://biocontainers.pro/">BioContainers</a>という組織が提供しています（BioContainersのサイトからも検索は可能ですが、使い勝手があまり良くない）</p></li>
+</ul>
+</section>
+<section id="bioconda-からイメージの検索-1" class="slide level2 smaller">
+<h2>BioConda からイメージの検索</h2>
+<ul>
+<li><p><a href="http://bioconda.github.io/" class="uri">http://bioconda.github.io/</a>から「Search」で使いたいソフトウェアを検索します</p></li>
+<li><p><code>container none</code>というアイコンをクリック（<code>none</code>とは嘘です！）</p></li>
+<li><p><a href="https://quay.io/" class="uri">https://quay.io/</a>（Red Hat社が持っているイメージのハブ）に飛びます</p></li>
+<li><p>タグアイコンをクリックして、イメージのタグを選びます</p></li>
+</ul>
+<p><img data-src="../images/container_none.png" height="50"></p>
+</section>
+<section id="dockerイメージの作り方" class="slide level2">
+<h2>Dockerイメージの作り方</h2>
+<p>この部分の内容はこちらです：<a href="https://carpentries-incubator.github.io/docker-introduction/creating-container-images/index.html" class="uri">https://carpentries-incubator.github.io/docker-introduction/creating-container-images/index.html</a></p>
+</section>
+<section id="チャレンジdockerfileを記入してみましょう" class="slide level2">
+<h2>チャレンジ：Dockerfileを記入してみましょう</h2>
+<p><code>Dockerfile</code>の基本的な書き方は以下の通りです：</p>
+<pre><code>FROM &lt;EXISTING IMAGE&gt;
+RUN &lt;INSTALL CMDS FROM SHELL&gt;
+CMD &lt;CMD TO RUN BY DEFAULT&gt;</code></pre>
+<p>Pythonをインストールするために、<code>Dockerfile</code>には何と書けば良いでしょうか？</p>
+</section>
+<section id="チャレンジ復習" class="slide level2">
+<h2>チャレンジ：復習</h2>
+<ul>
+<li>コンテナイメージが正しく作成されたかどうかを確認するためには、どのコマンドを実行すればよいですか？</li>
+<li>コンテナイメージ名にタグを指定しませんでした。Dockerは自動的にどのタグを使用しましたか？</li>
+<li>作成したコンテナイメージを基にコンテナを実行するには、どのコマンドを使用しますか？そのようなコンテナを実行した場合、デフォルトでは何が起こりますか？「hello world」を表示するようにすることはできますか？</li>
 </ul>
 
 <div class="quarto-auto-generated-content">

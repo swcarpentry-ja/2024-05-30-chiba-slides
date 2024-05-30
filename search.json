@@ -378,6 +378,27 @@
     "text": "コンテナとバーチャルマシンの違い\n\n\nhttps://www.docker.com/resources/what-container/"
   },
   {
+    "objectID": "docker/index.html#docker-コマンドを使ってみよう",
+    "href": "docker/index.html#docker-コマンドを使ってみよう",
+    "title": "SWC @ 千葉大学",
+    "section": "Docker コマンドを使ってみよう",
+    "text": "Docker コマンドを使ってみよう\n\nDocker Desktop を立ち上げる\nTerminal を立ち上げる\ndocker container ls コマンドを Terminal で実行する\n\ndocker container ls で現在実行中の Docker コンテナの一覧を表示します。"
+  },
+  {
+    "objectID": "docker/index.html#ヘルプを得る",
+    "href": "docker/index.html#ヘルプを得る",
+    "title": "SWC @ 千葉大学",
+    "section": "ヘルプを得る",
+    "text": "ヘルプを得る\n\ndocker --help\ndocker container --help\ndocker container ls --help\ndocker [command] [subcommand] [additional options]"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジ-docker-コマンドを探索してみましょう",
+    "href": "docker/index.html#チャレンジ-docker-コマンドを探索してみましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "[チャレンジ] Docker コマンドを探索してみましょう",
+    "text": "[チャレンジ] Docker コマンドを探索してみましょう\n\ndocker --help を実行し、リストからコマンドを選択しましょう。\nそのコマンドのヘルプを調べてください\nプロンプトの「Usage:」セクションを見て、コマンドがどのように機能するかを推測してください。"
+  },
+  {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",
     "href": "docker/index.html#docker-hubでコンテナを探す",
     "title": "SWC @ 千葉大学",

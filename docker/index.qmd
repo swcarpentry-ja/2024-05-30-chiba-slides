@@ -89,6 +89,8 @@ execute:
 [https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/)
 :::
 
+# Docker コマンドラインの紹介
+
 ## クエスチョン
 
 - Docker がインストールされ、実行されていることを確認するにはどうすればよいでしょうか？
@@ -102,9 +104,9 @@ execute:
 
 ## Docker コマンドを使ってみよう
 
-1. Docker Desktop を立ち上げる
-2. Terminal を立ち上げる
-3. `docker container ls` コマンドを Terminal で実行する
+1. Docker Desktop を立ち上げましょう (そしてツールバーを見てみましょう)
+2. Terminal を立ち上げましょう
+3. `docker container ls` コマンドを Terminal 内で実行しましょう
 
 `docker container ls` で現在実行中の Docker コンテナの一覧を表示します。
 

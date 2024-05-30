@@ -627,6 +627,39 @@ CMD &lt;CMD TO RUN BY DEFAULT&gt;</code></pre>
 <ul>
 <li><code>sum.py</code>の後に数字を書くと、どうなりますか？</li>
 </ul>
+</section>
+<section id="チャレンジオプションの復習" class="slide level2">
+<h2>チャレンジ：オプションの復習</h2>
+<ul>
+<li>Docker のコマンドがずいぶん長くなりました。それぞれのオプションの意味は何でしょう？</li>
+</ul>
+<pre><code>docker container run --mount type=bind,source=${PWD},target=/temp alice/alpine-python python3 /temp/sum.py</code></pre>
+</section>
+<section id="コマンドの書き方復習" class="slide level2">
+<h2>コマンドの書き方（復習）</h2>
+<p>一般的にこのように書きます：</p>
+<pre><code>docker [action] [docker options] [docker container image] [command to run inside]</code></pre>
+</section>
+<section id="チャレンジインターアクティブモード" class="slide level2">
+<h2>チャレンジ：インターアクティブモード</h2>
+<p>前のコンテナを<strong>インターアクティブ</strong>に実行して見てください。<strong>マウントされたフォルダーに入ることは出来ますか？</strong></p>
+</section>
+<section id="チャレンジコンテナ内からスクリプトを実行" class="slide level2">
+<h2>チャレンジ：コンテナ内からスクリプトを実行</h2>
+<p>今作ったコンテナにインターアクティブモードで入って、コピーした<code>sum.py</code>を実行して下さい。</p>
+</section>
+<section id="実際の-docker-の例を見て見ましょう" class="slide level2">
+<h2>実際の Docker の例を見て見ましょう</h2>
+<ul>
+<li>https://github.com/joelnitta/pleurosoriopsis
+<ul>
+<li>一つのイメージで解析を再現する方法</li>
+</ul></li>
+<li>https://github.com/joelnitta/targets_bioinfo_example
+<ul>
+<li>複数のイメージを組み込んだ解析</li>
+</ul></li>
+</ul>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

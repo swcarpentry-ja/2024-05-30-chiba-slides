@@ -336,6 +336,27 @@
     "text": "チャレンジ：変更のレビュー\nオーナーはコラボレーターに情報を提供せずにリポジトリにコミットをプッシュしました。\nコマンドラインでは、コラボレーターは何が変更されたかをどのように確認できますか？\nまた、GitHubではどうやって確認できますか？"
   },
   {
+    "objectID": "git/index.html#日目のおさらい-1",
+    "href": "git/index.html#日目のおさらい-1",
+    "title": "SWC @ 千葉大学",
+    "section": "１日目のおさらい",
+    "text": "１日目のおさらい\n\nシェルは理系研究に必須なスキル\n\nオープンソースソフトウエア\nサーバー\ngit, Docker\n\ngit は細かいレベルでコードの変更を追跡して、共有を可能にする"
+  },
+  {
+    "objectID": "git/index.html#よくできたこと",
+    "href": "git/index.html#よくできたこと",
+    "title": "SWC @ 千葉大学",
+    "section": "よくできたこと",
+    "text": "よくできたこと"
+  },
+  {
+    "objectID": "git/index.html#改善できること",
+    "href": "git/index.html#改善できること",
+    "title": "SWC @ 千葉大学",
+    "section": "改善できること",
+    "text": "改善できること"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -509,6 +530,41 @@
     "title": "SWC @ 千葉大学",
     "section": "チャレンジ：このスクリプトの使い方",
     "text": "チャレンジ：このスクリプトの使い方\n\nsum.pyの後に数字を書くと、どうなりますか？"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジオプションの復習",
+    "href": "docker/index.html#チャレンジオプションの復習",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：オプションの復習",
+    "text": "チャレンジ：オプションの復習\n\nDocker のコマンドがずいぶん長くなりました。それぞれのオプションの意味は何でしょう？\n\ndocker container run --mount type=bind,source=${PWD},target=/temp alice/alpine-python python3 /temp/sum.py"
+  },
+  {
+    "objectID": "docker/index.html#コマンドの書き方復習",
+    "href": "docker/index.html#コマンドの書き方復習",
+    "title": "SWC @ 千葉大学",
+    "section": "コマンドの書き方（復習）",
+    "text": "コマンドの書き方（復習）\n一般的にこのように書きます：\ndocker [action] [docker options] [docker container image] [command to run inside]"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジインターアクティブモード",
+    "href": "docker/index.html#チャレンジインターアクティブモード",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：インターアクティブモード",
+    "text": "チャレンジ：インターアクティブモード\n前のコンテナをインターアクティブに実行して見てください。マウントされたフォルダーに入ることは出来ますか？"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジコンテナ内からスクリプトを実行",
+    "href": "docker/index.html#チャレンジコンテナ内からスクリプトを実行",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：コンテナ内からスクリプトを実行",
+    "text": "チャレンジ：コンテナ内からスクリプトを実行\n今作ったコンテナにインターアクティブモードで入って、コピーしたsum.pyを実行して下さい。"
+  },
+  {
+    "objectID": "docker/index.html#実際の-docker-の例を見て見ましょう",
+    "href": "docker/index.html#実際の-docker-の例を見て見ましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "実際の Docker の例を見て見ましょう",
+    "text": "実際の Docker の例を見て見ましょう\n\nhttps://github.com/joelnitta/pleurosoriopsis\n\n一つのイメージで解析を再現する方法\n\nhttps://github.com/joelnitta/targets_bioinfo_example\n\n複数のイメージを組み込んだ解析"
   },
   {
     "objectID": "shell/index.html#データの準備",

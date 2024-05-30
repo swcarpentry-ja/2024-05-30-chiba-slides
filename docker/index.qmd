@@ -232,3 +232,35 @@ Pythonをインストールするために、`Dockerfile`には何と書けば�
 ## チャレンジ：このスクリプトの使い方
 
 - `sum.py`の後に数字を書くと、どうなりますか？
+
+## チャレンジ：オプションの復習
+
+- Docker のコマンドがずいぶん長くなりました。それぞれのオプションの意味は何でしょう？
+
+```
+docker container run --mount type=bind,source=${PWD},target=/temp alice/alpine-python python3 /temp/sum.py
+```
+
+## コマンドの書き方（復習）
+
+一般的にこのように書きます：
+
+```
+docker [action] [docker options] [docker container image] [command to run inside]
+```
+
+## チャレンジ：インターアクティブモード
+
+前のコンテナを**インターアクティブ**に実行して見てください。**マウントされたフォルダーに入ることは出来ますか？**
+
+## チャレンジ：コンテナ内からスクリプトを実行
+
+今作ったコンテナにインターアクティブモードで入って、コピーした`sum.py`を実行して下さい。
+
+## 実際の Docker の例を見て見ましょう
+
+- https://github.com/joelnitta/pleurosoriopsis
+  - 一つのイメージで解析を再現する方法
+
+- https://github.com/joelnitta/targets_bioinfo_example
+  - 複数のイメージを組み込んだ解析

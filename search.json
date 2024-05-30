@@ -396,7 +396,7 @@
     "href": "docker/index.html#docker-コマンドを使ってみよう",
     "title": "SWC @ 千葉大学",
     "section": "Docker コマンドを使ってみよう",
-    "text": "Docker コマンドを使ってみよう\n\nDocker Desktop を立ち上げる\nTerminal を立ち上げる\ndocker container ls コマンドを Terminal で実行する\n\ndocker container ls で現在実行中の Docker コンテナの一覧を表示します。"
+    "text": "Docker コマンドを使ってみよう\n\nDocker Desktop を立ち上げましょう (そしてツールバーを見てみましょう)\nTerminal を立ち上げましょう\ndocker container ls コマンドを Terminal 内で実行しましょう\n\ndocker container ls で現在実行中の Docker コンテナの一覧を表示します。"
   },
   {
     "objectID": "docker/index.html#ヘルプの取得方法",

@@ -89,6 +89,27 @@ execute:
 [https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/)
 :::
 
+## Docker コマンドを使ってみよう
+
+1. Docker Desktop を立ち上げる
+2. Terminal を立ち上げる
+3. `docker container ls` コマンドを Terminal で実行する
+
+`docker container ls` で現在実行中の Docker コンテナの一覧を表示します。
+
+## ヘルプを得る
+
+- `docker --help`
+- `docker container --help`
+- `docker container ls --help`
+- docker [command] [subcommand] [additional options]
+
+## [チャレンジ] Docker コマンドを探索してみましょう
+
+- `docker --help` を実行し、リストからコマンドを選択しましょう。
+- そのコマンドのヘルプを調べてください
+- プロンプトの「Usage:」セクションを見て、コマンドがどのように機能するかを推測してください。
+
 # Docker Hub
 
 ## Docker Hubでコンテナを探す

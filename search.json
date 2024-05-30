@@ -340,21 +340,42 @@
     "href": "git/index.html#日目のおさらい-1",
     "title": "SWC @ 千葉大学",
     "section": "１日目のおさらい",
-    "text": "１日目のおさらい\n\nシェルは理系研究に必須なスキル\n\nオープンソースソフトウエア\nサーバー\ngit, Docker\n\ngit は細かいレベルでコードの変更を追跡して、共有を可能にする"
+    "text": "１日目のおさらい\n\nシェルは研究に必須なスキル\n\nオープンソースソフトウエア\nサーバー\ngit, Docker\n\ngit は細かいレベルでコードの変更を追跡して、共有を可能にする"
   },
   {
     "objectID": "git/index.html#よくできたこと",
     "href": "git/index.html#よくできたこと",
     "title": "SWC @ 千葉大学",
     "section": "よくできたこと",
-    "text": "よくできたこと"
+    "text": "よくできたこと\n\n「スタッフの方々の手いフォローでてんとかついていけた」\n「コードの意味や一連の流れが分かりやすく言されていた」"
   },
   {
     "objectID": "git/index.html#改善できること",
     "href": "git/index.html#改善できること",
     "title": "SWC @ 千葉大学",
     "section": "改善できること",
-    "text": "改善できること"
+    "text": "改善できること\n\n最後に何が出来るのか、目的設定があると分かりやすくなる\nチャレンジをやる時、隣の方と相談できたらいい\n図があるのに、あまり活用できていない\n声が小さい"
+  },
+  {
+    "objectID": "git/index.html#今日の目的",
+    "href": "git/index.html#今日の目的",
+    "title": "SWC @ 千葉大学",
+    "section": "今日の目的",
+    "text": "今日の目的\n\ngitでコードの衝突が起きた時の解決策を身につける\ndockerの基本的な操作が出来るようになる\ndockerをどのように自分の研究に使えるのか、具体的にイメージができるようになる"
+  },
+  {
+    "objectID": "git/index.html#共同作業続き-1",
+    "href": "git/index.html#共同作業続き-1",
+    "title": "SWC @ 千葉大学",
+    "section": "共同作業（続き）",
+    "text": "共同作業（続き）\n\n昨日の役割を交代して、もう一度やってみましょう"
+  },
+  {
+    "objectID": "git/index.html#衝突とは",
+    "href": "git/index.html#衝突とは",
+    "title": "SWC @ 千葉大学",
+    "section": "衝突とは",
+    "text": "衝突とは\n\n共同作業をしていると、いつか、それぞれで同じ箇所に異なった変更を加えることがあるでしょう。これは git でいう「衝突」（conflict）\ngit にはどちらが正しいのか、分からないので、手で直さないといけない"
   },
   {
     "objectID": "about.html",
@@ -564,7 +585,7 @@
     "href": "docker/index.html#実際の-docker-の例を見て見ましょう",
     "title": "SWC @ 千葉大学",
     "section": "実際の Docker の例を見て見ましょう",
-    "text": "実際の Docker の例を見て見ましょう\n\nhttps://github.com/joelnitta/pleurosoriopsis\n\n一つのイメージで解析を再現する方法\n\nhttps://github.com/joelnitta/targets_bioinfo_example\n\n複数のイメージを組み込んだ解析"
+    "text": "実際の Docker の例を見て見ましょう\n\nhttps://github.com/joelnitta/pleurosoriopsis\n\n一つのイメージで解析を再現する方法\n\nhttps://github.com/joelnitta/targets_vcf_example\n\n複数のイメージを組み込んだパイプライン\ndocker に加えて、conda が必要"
   },
   {
     "objectID": "shell/index.html#データの準備",

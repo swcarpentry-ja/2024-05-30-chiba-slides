@@ -35,6 +35,13 @@
     "text": "行動規範\nどなたでも気兼ねなくワークショップに参加できるように、行動規範があります。\n行動規範に反する行為があった場合は、インシデントレポートフォームで報告することができます。"
   },
   {
+    "objectID": "swc-intro/index.html#準備",
+    "href": "swc-intro/index.html#準備",
+    "title": "SWC @ 千葉大学",
+    "section": "準備",
+    "text": "準備\n\nソフトウェアのインストール（git、docker）\nファイルのダウンロード\n\nbash\ndocker\n\nワークショップ前アンケート"
+  },
+  {
     "objectID": "swc-intro/index.html#問題",
     "href": "swc-intro/index.html#問題",
     "title": "SWC @ 千葉大学",

@@ -392,11 +392,11 @@
     "text": "研究用オープンソース・ソフトウエアの問題点\n\n今までの困ったことについて話しましょう"
   },
   {
-    "objectID": "docker/index.html#ドッカーとは",
-    "href": "docker/index.html#ドッカーとは",
+    "objectID": "docker/index.html#docker-とは",
+    "href": "docker/index.html#docker-とは",
     "title": "SWC @ 千葉大学",
-    "section": "ドッカーとは？",
-    "text": "ドッカーとは？\n\n\n\nコンテナを管理するソフト"
+    "section": "Docker とは？",
+    "text": "Docker とは？\n\n\n\nコンテナを管理するソフト"
   },
   {
     "objectID": "docker/index.html#コンテナとは",
@@ -427,11 +427,11 @@
     "text": "クエスチョン\n\nDocker がインストールされ、実行されていることを確認するにはどうすればよいでしょうか？\nDocker と対話するにはどうするとよいでしょうか？"
   },
   {
-    "objectID": "docker/index.html#目的",
-    "href": "docker/index.html#目的",
+    "objectID": "docker/index.html#目標",
+    "href": "docker/index.html#目標",
     "title": "SWC @ 千葉大学",
-    "section": "目的",
-    "text": "目的\n\nDocker がインストールされ、使用できる状態であることを確認する方法を説明してみましょう。\nいくつかの初めの Docker コマンドライン対話をデモしてみましょう。\nDocker コマンドのヘルプを使用してみましょう。"
+    "section": "目標",
+    "text": "目標\n\nDocker がインストールされ、使用できる状態であることを確認する方法を説明してみましょう。\nいくつかの初めの Docker コマンドライン対話をデモしてみましょう。\nDocker コマンドのヘルプを使用してみましょう。"
   },
   {
     "objectID": "docker/index.html#docker-コマンドを使ってみよう",
@@ -460,6 +460,20 @@
     "title": "SWC @ 千葉大学",
     "section": "キーポイント",
     "text": "キーポイント\n\nツールバーのアイコンは、Docker を使用する準備ができていることを示します (Windows or MacOS で)。\n通常は コマンドラインを使用して Docker と対話します。\n特定の Docker コマンドを実行する方法を学ぶには、コマンドの後に --help を入力します。"
+  },
+  {
+    "objectID": "docker/index.html#クエスチョン-1",
+    "href": "docker/index.html#クエスチョン-1",
+    "title": "SWC @ 千葉大学",
+    "section": "クエスチョン",
+    "text": "クエスチョン\n\nコンピューター上で Docker コンテナー or イメージを操作するにはどうすればよいでしょうか?"
+  },
+  {
+    "objectID": "docker/index.html#目標-1",
+    "href": "docker/index.html#目標-1",
+    "title": "SWC @ 千葉大学",
+    "section": "目標",
+    "text": "目標\n\nコマンドを使用して、コンピューター上にどの Docker イメージがあるかを確認しましょう。"
   },
   {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",

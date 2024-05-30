@@ -89,6 +89,17 @@ execute:
 [https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/)
 :::
 
+## クエスチョン
+
+- Docker がインストールされ、実行されていることを確認するにはどうすればよいでしょうか？
+- Docker と対話するにはどうするとよいでしょうか？
+
+## 目的
+
+- Docker がインストールされ、使用できる状態であることを確認する方法を説明してみましょう。
+- いくつかの初めの Docker コマンドライン対話をデモしてみましょう。
+- Docker コマンドのヘルプを使用してみましょう。
+
 ## Docker コマンドを使ってみよう
 
 1. Docker Desktop を立ち上げる
@@ -97,18 +108,24 @@ execute:
 
 `docker container ls` で現在実行中の Docker コンテナの一覧を表示します。
 
-## ヘルプを得る
+## ヘルプの取得方法
 
 - `docker --help`
 - `docker container --help`
 - `docker container ls --help`
 - docker [command] [subcommand] [additional options]
 
-## [チャレンジ] Docker コマンドを探索してみましょう
+## [チャレンジ] Docker コマンドを探索してみましょう (5分)
 
 - `docker --help` を実行し、リストからコマンドを選択しましょう。
 - そのコマンドのヘルプを調べてください
 - プロンプトの「Usage:」セクションを見て、コマンドがどのように機能するかを推測してください。
+
+## キーポイント
+
+- ツールバーのアイコンは、Docker を使用する準備ができていることを示します (Windows or MacOS で)。
+- 通常は コマンドラインを使用して Docker と対話します。
+- 特定の Docker コマンドを実行する方法を学ぶには、コマンドの後に `--help` を入力します。
 
 # Docker Hub
 

@@ -378,6 +378,20 @@
     "text": "コンテナとバーチャルマシンの違い\n\n\nhttps://www.docker.com/resources/what-container/"
   },
   {
+    "objectID": "docker/index.html#クエスチョン",
+    "href": "docker/index.html#クエスチョン",
+    "title": "SWC @ 千葉大学",
+    "section": "クエスチョン",
+    "text": "クエスチョン\n\nDocker がインストールされ、実行されていることを確認するにはどうすればよいでしょうか？\nDocker と対話するにはどうするとよいでしょうか？"
+  },
+  {
+    "objectID": "docker/index.html#目的",
+    "href": "docker/index.html#目的",
+    "title": "SWC @ 千葉大学",
+    "section": "目的",
+    "text": "目的\n\nDocker がインストールされ、使用できる状態であることを確認する方法を説明してみましょう。\nいくつかの初めの Docker コマンドライン対話をデモしてみましょう。\nDocker コマンドのヘルプを使用してみましょう。"
+  },
+  {
     "objectID": "docker/index.html#docker-コマンドを使ってみよう",
     "href": "docker/index.html#docker-コマンドを使ってみよう",
     "title": "SWC @ 千葉大学",
@@ -385,18 +399,25 @@
     "text": "Docker コマンドを使ってみよう\n\nDocker Desktop を立ち上げる\nTerminal を立ち上げる\ndocker container ls コマンドを Terminal で実行する\n\ndocker container ls で現在実行中の Docker コンテナの一覧を表示します。"
   },
   {
-    "objectID": "docker/index.html#ヘルプを得る",
-    "href": "docker/index.html#ヘルプを得る",
+    "objectID": "docker/index.html#ヘルプの取得方法",
+    "href": "docker/index.html#ヘルプの取得方法",
     "title": "SWC @ 千葉大学",
-    "section": "ヘルプを得る",
-    "text": "ヘルプを得る\n\ndocker --help\ndocker container --help\ndocker container ls --help\ndocker [command] [subcommand] [additional options]"
+    "section": "ヘルプの取得方法",
+    "text": "ヘルプの取得方法\n\ndocker --help\ndocker container --help\ndocker container ls --help\ndocker [command] [subcommand] [additional options]"
   },
   {
-    "objectID": "docker/index.html#チャレンジ-docker-コマンドを探索してみましょう",
-    "href": "docker/index.html#チャレンジ-docker-コマンドを探索してみましょう",
+    "objectID": "docker/index.html#チャレンジ-docker-コマンドを探索してみましょう-5分",
+    "href": "docker/index.html#チャレンジ-docker-コマンドを探索してみましょう-5分",
     "title": "SWC @ 千葉大学",
-    "section": "[チャレンジ] Docker コマンドを探索してみましょう",
-    "text": "[チャレンジ] Docker コマンドを探索してみましょう\n\ndocker --help を実行し、リストからコマンドを選択しましょう。\nそのコマンドのヘルプを調べてください\nプロンプトの「Usage:」セクションを見て、コマンドがどのように機能するかを推測してください。"
+    "section": "[チャレンジ] Docker コマンドを探索してみましょう (5分)",
+    "text": "[チャレンジ] Docker コマンドを探索してみましょう (5分)\n\ndocker --help を実行し、リストからコマンドを選択しましょう。\nそのコマンドのヘルプを調べてください\nプロンプトの「Usage:」セクションを見て、コマンドがどのように機能するかを推測してください。"
+  },
+  {
+    "objectID": "docker/index.html#キーポイント",
+    "href": "docker/index.html#キーポイント",
+    "title": "SWC @ 千葉大学",
+    "section": "キーポイント",
+    "text": "キーポイント\n\nツールバーのアイコンは、Docker を使用する準備ができていることを示します (Windows or MacOS で)。\n通常は コマンドラインを使用して Docker と対話します。\n特定の Docker コマンドを実行する方法を学ぶには、コマンドの後に --help を入力します。"
   },
   {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",

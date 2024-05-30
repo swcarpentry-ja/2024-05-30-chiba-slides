@@ -92,12 +92,21 @@ execute:
 :::
 :::
 
-
 ## 行動規範
 
 どなたでも気兼ねなくワークショップに参加できるように、[行動規範](https://carpentries-coc.readthedocs.io/ja/latest/topic_folders/policies/code-of-conduct.html)があります。
 
 行動規範に反する行為があった場合は、[インシデントレポートフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeYqO37p0P-5JsEoF-E_edpZM5iRdFxWHTFqILo6LzqGS33YQ/viewform?fbzx=-8556883400541824673)で報告することができます。
+
+## 準備
+
+- [ソフトウェアのインストール（git、docker）](https://swcarpentry-ja.github.io/2024-05-30-chiba/#setup)
+
+- ファイルのダウンロード
+  - [bash](https://swcarpentry-ja.github.io/shell-novice/#download-files)
+  - [docker](https://carpentries-incubator.github.io/docker-introduction/setup.html#files-to-download)
+
+- [ワークショップ前アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2024-05-30-chiba)
 
 # ソフトウェアカーペントリーの紹介
 

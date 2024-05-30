@@ -343,6 +343,41 @@
     "text": "About this site"
   },
   {
+    "objectID": "docker/index.html#研究用オープンソース-ソフトウエアの問題点",
+    "href": "docker/index.html#研究用オープンソース-ソフトウエアの問題点",
+    "title": "SWC @ 千葉大学",
+    "section": "研究用オープンソース・ソフトウエアの問題点",
+    "text": "研究用オープンソース・ソフトウエアの問題点\n\n今までの困ったことについて話しましょう"
+  },
+  {
+    "objectID": "docker/index.html#ドッカーとは",
+    "href": "docker/index.html#ドッカーとは",
+    "title": "SWC @ 千葉大学",
+    "section": "ドッカーとは？",
+    "text": "ドッカーとは？\n\n\n\nコンテナを管理するソフト"
+  },
+  {
+    "objectID": "docker/index.html#コンテナとは",
+    "href": "docker/index.html#コンテナとは",
+    "title": "SWC @ 千葉大学",
+    "section": "コンテナとは？",
+    "text": "コンテナとは？\n\n\n\nあるアプリに必要な環境をOSレベルでパッケージ化してまとめた「箱」\n\n\nhttps://engineer-life.dev/docker/\n\n\n\n\n2023-03-09　小笠原・父島にて"
+  },
+  {
+    "objectID": "docker/index.html#イメージとは",
+    "href": "docker/index.html#イメージとは",
+    "title": "SWC @ 千葉大学",
+    "section": "イメージとは？",
+    "text": "イメージとは？\n\n\n\nコンテナを作る「型」"
+  },
+  {
+    "objectID": "docker/index.html#コンテナとバーチャルマシンの違い",
+    "href": "docker/index.html#コンテナとバーチャルマシンの違い",
+    "title": "SWC @ 千葉大学",
+    "section": "コンテナとバーチャルマシンの違い",
+    "text": "コンテナとバーチャルマシンの違い\n\n\nhttps://www.docker.com/resources/what-container/"
+  },
+  {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",
     "href": "docker/index.html#docker-hubでコンテナを探す",
     "title": "SWC @ 千葉大学",
@@ -399,8 +434,8 @@
     "text": "BioConda からイメージの検索\n\nhttp://bioconda.github.io/から「Search」で使いたいソフトウェアを検索します\ncontainer noneというアイコンをクリック（noneとは嘘です！）\nhttps://quay.io/（Red Hat社が持っているイメージのハブ）に飛びます\nタグアイコンをクリックして、イメージのタグを選びます"
   },
   {
-    "objectID": "docker/index.html#dockerイメージの作り方-1",
-    "href": "docker/index.html#dockerイメージの作り方-1",
+    "objectID": "docker/index.html#dockerイメージの作り方",
+    "href": "docker/index.html#dockerイメージの作り方",
     "title": "SWC @ 千葉大学",
     "section": "Dockerイメージの作り方",
     "text": "Dockerイメージの作り方\nこの部分の内容はこちらです：https://carpentries-incubator.github.io/docker-introduction/creating-container-images/index.html"

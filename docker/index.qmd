@@ -13,6 +13,82 @@ execute:
 
 <https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/docker>
 
+# Dockerの紹介
+
+## 研究用オープンソース・<br>ソフトウエアの問題点
+
+- 今までの困ったことについて話しましょう
+
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### ドッカーはあなたのお悩みを解決してくれる（はず）
+
+## ドッカーとは？
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- コンテナを管理するソフト
+:::
+
+::: {.column width="50%"}
+![](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png){fig-alt="Docker logo"}
+:::
+
+::::
+
+## コンテナとは？
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- あるアプリに必要な環境を**OSレベル**でパッケージ化してまとめた「箱」
+
+::: small
+[https://engineer-life.dev/docker/](https://engineer-life.dev/docker/)
+:::
+
+:::
+
+::: {.column width="50%"}
+![](../images/container.jpg){fig-alt="Men handling a shipping container"}
+:::
+
+::: small
+2023-03-09　小笠原・父島にて
+:::
+
+::::
+
+## イメージとは？
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- コンテナを作る「型」
+:::
+
+::: {.column width="50%"}
+![](https://i.etsystatic.com/8961797/r/il/b1c06a/2322596149/il_570xN.2322596149_dxw8.jpg){fig-alt="Fox cookie cutter"}
+:::
+
+::::
+
+## コンテナとバーチャルマシンの違い
+
+![](../images/container_vs_vm.jpg){fig-alt="Comparison of containers vs virtual machines" align="center"}
+
+::: small
+[https://www.docker.com/resources/what-container/](https://www.docker.com/resources/what-container/)
+:::
+
 # Docker Hub
 
 ## Docker Hubでコンテナを探す
@@ -83,7 +159,7 @@ docker image pull python:3.8
 
 ![](../images/container_none.png){height=50px}
 
-# Dockerイメージの作り方
+# Dockerイメージの<br>作り方
 
 ## Dockerイメージの作り方
 
@@ -116,4 +192,3 @@ Pythonをインストールするために、`Dockerfile`には何と書けば�
 ## チャレンジ：このスクリプトの使い方
 
 - `sum.py`の後に数字を書くと、どうなりますか？
-

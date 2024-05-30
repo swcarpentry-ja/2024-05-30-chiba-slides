@@ -259,8 +259,9 @@ docker [action] [docker options] [docker container image] [command to run inside
 
 ## 実際の Docker の例を見て見ましょう
 
-- https://github.com/joelnitta/pleurosoriopsis
+- <https://github.com/joelnitta/pleurosoriopsis>
   - 一つのイメージで解析を再現する方法
 
-- https://github.com/joelnitta/targets_bioinfo_example
-  - 複数のイメージを組み込んだ解析
+- <https://github.com/joelnitta/targets_vcf_example>
+  - 複数のイメージを組み込んだパイプライン
+  - docker に加えて、conda が必要

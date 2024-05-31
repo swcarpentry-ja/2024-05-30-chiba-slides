@@ -560,6 +560,34 @@
     "text": "まとめ／キーポイント\n\ndocker image pull コマンドは、インターネットから Docker イメージをダウンロードします。\ndocker image ls コマンドは、コンピューター上に存在する Docker イメージを一覧表示します。\ndocker container run コマンドは、イメージからコンテナを作成し、その中でコマンドを実行します。\ndocker container run コマンドを使用すると、コンテナはデフォルトのアクション、ユーザー指定のアクション、または対話的に使用されるシェルを実行できます。"
   },
   {
+    "objectID": "docker/index.html#クエスチョンと目標",
+    "href": "docker/index.html#クエスチョンと目標",
+    "title": "SWC @ 千葉大学",
+    "section": "クエスチョンと目標",
+    "text": "クエスチョンと目標\n\nコンピューター上の Docker コンテナーと対話するにはどうすればよいですか?\nコンテナとイメージを管理するにはどうすればよいですか?\n実行中のコンテナと完了したコンテナを一覧表示する方法を説明してみましょう。\nコンテナイメージを一覧表示して削除する方法を理解しましょう。"
+  },
+  {
+    "objectID": "docker/index.html#付箋で成功確認イメージの削除",
+    "href": "docker/index.html#付箋で成功確認イメージの削除",
+    "title": "SWC @ 千葉大学",
+    "section": "[付箋で成功確認]イメージの削除",
+    "text": "[付箋で成功確認]イメージの削除\n\ndocker image ls\ndocker image rm イメージのID"
+  },
+  {
+    "objectID": "docker/index.html#今どのコンテナが走っているのか",
+    "href": "docker/index.html#今どのコンテナが走っているのか",
+    "title": "SWC @ 千葉大学",
+    "section": "今どのコンテナが走っているのか？",
+    "text": "今どのコンテナが走っているのか？\n\ndocker container ls\ndocker ps"
+  },
+  {
+    "objectID": "docker/index.html#すべてのコンテナを確認する",
+    "href": "docker/index.html#すべてのコンテナを確認する",
+    "title": "SWC @ 千葉大学",
+    "section": "すべてのコンテナを確認する",
+    "text": "すべてのコンテナを確認する\n\ndocker container ls --all"
+  },
+  {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",
     "href": "docker/index.html#docker-hubでコンテナを探す",
     "title": "SWC @ 千葉大学",

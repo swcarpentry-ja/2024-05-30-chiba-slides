@@ -553,6 +553,13 @@
     "text": "[チャレンジ] 完璧な理解のための練習\nubuntu イメージからコンテナを作り、そのubuntuのバージョンを確認する方法を見つけてください。 また apt-get というコマンドを ubuntu コンテナ中で見つけてください。 apt-get というコマンドが見つかったら --help オプションを apt-get コマンドに渡してみてください。"
   },
   {
+    "objectID": "docker/index.html#まとめキーポイント",
+    "href": "docker/index.html#まとめキーポイント",
+    "title": "SWC @ 千葉大学",
+    "section": "まとめ／キーポイント",
+    "text": "まとめ／キーポイント\n\ndocker image pull コマンドは、インターネットから Docker イメージをダウンロードします。\ndocker image ls コマンドは、コンピューター上に存在する Docker イメージを一覧表示します。\ndocker container run コマンドは、イメージからコンテナを作成し、その中でコマンドを実行します。\ndocker container run コマンドを使用すると、コンテナはデフォルトのアクション、ユーザー指定のアクション、または対話的に使用されるシェルを実行できます。"
+  },
+  {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",
     "href": "docker/index.html#docker-hubでコンテナを探す",
     "title": "SWC @ 千葉大学",

@@ -588,6 +588,27 @@
     "text": "すべてのコンテナを確認する\n\ndocker container ls --all"
   },
   {
+    "objectID": "docker/index.html#終了したコンテナを削除する",
+    "href": "docker/index.html#終了したコンテナを削除する",
+    "title": "SWC @ 千葉大学",
+    "section": "終了したコンテナを削除する",
+    "text": "終了したコンテナを削除する\n\ndocker container rm コンテナのID"
+  },
+  {
+    "objectID": "docker/index.html#イメージの削除",
+    "href": "docker/index.html#イメージの削除",
+    "title": "SWC @ 千葉大学",
+    "section": "イメージの削除",
+    "text": "イメージの削除\n「実行中または停止している可能性のあるコンテナをすべて削除したら」 イメージの削除ができます。 docker image rm hello-world"
+  },
+  {
+    "objectID": "docker/index.html#まとめキーポイント-1",
+    "href": "docker/index.html#まとめキーポイント-1",
+    "title": "SWC @ 千葉大学",
+    "section": "まとめ／キーポイント",
+    "text": "まとめ／キーポイント\n\ndocker container 下にコンテナを操作および管理するために使用されるサブコマンドがある。\ndocker image 下にイメージを操作および管理するために使用されるサブコマンドがある。\ndocker container ls または、docker ps で現在実行中のコンテナに関する情報を知ることができる。"
+  },
+  {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",
     "href": "docker/index.html#docker-hubでコンテナを探す",
     "title": "SWC @ 千葉大学",

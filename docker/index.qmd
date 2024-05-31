@@ -227,7 +227,18 @@ sh は alpine コンテナの中にある /bin/sh コマンドを実行してい
 ## すべてのコンテナを確認する
 - `docker container ls --all`
 
+## 終了したコンテナを削除する
+- `docker container rm コンテナのID`
 
+## イメージの削除
+「実行中または停止している可能性のあるコンテナをすべて削除したら」
+イメージの削除ができます。
+`docker image rm hello-world`
+
+## まとめ／キーポイント
+- `docker container` 下にコンテナを操作および管理するために使用されるサブコマンドがある。
+- `docker image` 下にイメージを操作および管理するために使用されるサブコマンドがある。
+- `docker container ls` または、`docker ps` で現在実行中のコンテナに関する情報を知ることができる。
 
 # Docker Hub
 

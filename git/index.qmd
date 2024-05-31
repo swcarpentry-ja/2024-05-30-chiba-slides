@@ -13,6 +13,8 @@ execute:
 
 <https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/git>
 
+# Git
+
 # ファイルを無視する
 
 ## ファイルを無視する
@@ -200,7 +202,7 @@ GitHubのあなたのplanetsリポジトリに移動して下さい。
 ## コラボレーターがオーナーのリポジトリへのアクセスを受け入れる
 
 - <https://github.com/notifications> にアクセスするか、メール通知を確認します。
-- オーナーのリポジトリへのアクセスを受け入れます。
+- オーナーのリポジトリへのアクセスを**受け入れます**。
 
 ## オーナーのリポジトリをクローンする
 
@@ -271,6 +273,22 @@ git pull origin main
 
 # １日目のおさらい
 
+## JSBiについて
+
+![](https://www.jsbi.org/media/files/_u/key_visual/bxz0ka00r.jpg)
+
+- このワークショップは [日本バイオインフォマティクス学会](https://www.jsbi.org/) の [公募研究会・地域部会](https://www.jsbi.org/activity/koubo/detail--id-790.htm)として採択され、ご協力をいただいています。
+
+- 非会員の方は是非[入会](https://www.jsbi.org/membership/)をご検討ください
+
+## 集合写真
+
+- 「公開しても大丈夫」という方は、是非ご協力をお願いします。
+
+- 後ろから撮った写真を公開することがありますが、もし公開を希望されない場合は、お知らせください。
+
+<https://swcarpentry-ja.github.io/2024-05-30-chiba/>
+
 ## １日目のおさらい
 
 - シェルは研究に必須なスキル
@@ -308,7 +326,7 @@ git pull origin main
 
 ## 共同作業（続き）
 
-- 昨日の役割を交代して、もう一度やってみましょう
+- 昨日の役割を交代して、[もう一度やってみましょう](#githubを介して共同作業してみよう)
 
 # 衝突の管理
 

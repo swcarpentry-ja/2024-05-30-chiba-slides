@@ -525,6 +525,13 @@
     "text": "今何があったの？\n\nコンテナを走らせた\nデフォルトのアクションを実行した\nコンテナをシャットダウンした"
   },
   {
+    "objectID": "docker/index.html#付箋で成功を確認-自分が選んだコマンドを使ってコンテナを実行する",
+    "href": "docker/index.html#付箋で成功を確認-自分が選んだコマンドを使ってコンテナを実行する",
+    "title": "SWC @ 千葉大学",
+    "section": "[付箋で成功を確認] 自分が選んだコマンドを使ってコンテナを実行する",
+    "text": "[付箋で成功を確認] 自分が選んだコマンドを使ってコンテナを実行する\nまずは コンテナを実行 (alpine というイメージで)\ndocker container run alpine\ncat /etc/os-release というコマンドを alpine イメージのコンテナで実行する。\ndocker container run alpine cat /etc/os-release"
+  },
+  {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",
     "href": "docker/index.html#docker-hubでコンテナを探す",
     "title": "SWC @ 千葉大学",

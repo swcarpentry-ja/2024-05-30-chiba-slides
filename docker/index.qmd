@@ -151,6 +151,24 @@ docker image ls
 docker image pull hello-world
 ```
 
+## [チャレンジ] Hello World, Part 2 (3分)
+
+alpine コンテナを実行して、「hello world」メッセージを出力させることはできますか?
+それを実現するコマンドを提案してください。
+
+## [付箋で成功を確認] コンテナを対話的に実行する
+
+コンテナを実行したままにしてログインし、さらに多くのコマンドを試用したい場合はどうすればよいでしょうか?
+
+これを行うには -it オプションを使います。
+
+```
+docker container run -it alpine sh
+```
+
+sh は alpine コンテナの中にある /bin/sh コマンドを実行しています。
+(alpine コンテナには /bin/bash シェルが無いため)
+
 ## Docker Hub
 どこから `hello-world` イメージはダウンロードされたのか？
 

@@ -151,24 +151,6 @@ docker image ls
 docker image pull hello-world
 ```
 
-## [チャレンジ] Hello World, Part 2 (3分)
-
-alpine コンテナを実行して、「hello world」メッセージを出力させることはできますか?
-それを実現するコマンドを提案してください。
-
-## [付箋で成功を確認] コンテナを対話的に実行する
-
-コンテナを実行したままにしてログインし、さらに多くのコマンドを試用したい場合はどうすればよいでしょうか?
-
-これを行うには -it オプションを使います。
-
-```
-docker container run -it alpine sh
-```
-
-sh は alpine コンテナの中にある /bin/sh コマンドを実行しています。
-(alpine コンテナには /bin/bash シェルが無いため)
-
 ## Docker Hub
 どこから `hello-world` イメージはダウンロードされたのか？
 
@@ -197,13 +179,28 @@ Docker イメージからコンテナを作成して実行するには、`docker
 ```
 docker container run alpine
 ```
-
 `cat /etc/os-release` というコマンドを alpine イメージのコンテナで実行する。
 ```
 docker container run alpine cat /etc/os-release
 ```
 
+## [チャレンジ] Hello World, Part 2 (3分)
+alpine コンテナを実行して、「hello world」メッセージを出力させることはできますか?
+それを実現するコマンドを提案してください。
 
+## [付箋で成功を確認] コンテナを対話的に実行しよう
+コンテナを実行したままにしてログインし、さらに多くのコマンドを試用したい場合はどうすればよいでしょうか?
+これを行うには -it オプションを使います。
+```
+docker container run -it alpine sh
+```
+sh は alpine コンテナの中にある /bin/sh コマンドを実行しています。
+(alpine コンテナには /bin/bash シェルが無いため)
+
+## [チャレンジ] 完璧な理解のための練習
+`ubuntu` イメージからコンテナを作り、そのubuntuのバージョンを確認する方法を見つけてください。
+また `apt-get` というコマンドを ubuntu コンテナ中で見つけてください。
+`apt-get` というコマンドが見つかったら `--help` オプションを `apt-get` コマンドに渡してみてください。
 
 # Docker Hub
 

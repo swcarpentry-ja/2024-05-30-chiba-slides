@@ -542,17 +542,6 @@
 <p>インターネットからの <code>hello-world</code> イメージの取得</p>
 <pre><code>docker image pull hello-world</code></pre>
 </section>
-<section id="チャレンジ-hello-world-part-2-3分" class="slide level2">
-<h2>[チャレンジ] Hello World, Part 2 (3分)</h2>
-<p>alpine コンテナを実行して、「hello world」メッセージを出力させることはできますか? それを実現するコマンドを提案してください。</p>
-</section>
-<section id="付箋で成功を確認-コンテナを対話的に実行する" class="slide level2">
-<h2>[付箋で成功を確認] コンテナを対話的に実行する</h2>
-<p>コンテナを実行したままにしてログインし、さらに多くのコマンドを試用したい場合はどうすればよいでしょうか?</p>
-<p>これを行うには -it オプションを使います。</p>
-<pre><code>docker container run -it alpine sh</code></pre>
-<p>sh は alpine コンテナの中にある /bin/sh コマンドを実行しています。 (alpine コンテナには /bin/bash シェルが無いため)</p>
-</section>
 <section id="docker-hub" class="slide level2">
 <h2>Docker Hub</h2>
 <p>どこから <code>hello-world</code> イメージはダウンロードされたのか？</p>
@@ -582,6 +571,20 @@
 <pre><code>docker container run alpine</code></pre>
 <p><code>cat /etc/os-release</code> というコマンドを alpine イメージのコンテナで実行する。</p>
 <pre><code>docker container run alpine cat /etc/os-release</code></pre>
+</section>
+<section id="チャレンジ-hello-world-part-2-3分" class="slide level2">
+<h2>[チャレンジ] Hello World, Part 2 (3分)</h2>
+<p>alpine コンテナを実行して、「hello world」メッセージを出力させることはできますか? それを実現するコマンドを提案してください。</p>
+</section>
+<section id="付箋で成功を確認-コンテナを対話的に実行しよう" class="slide level2">
+<h2>[付箋で成功を確認] コンテナを対話的に実行しよう</h2>
+<p>コンテナを実行したままにしてログインし、さらに多くのコマンドを試用したい場合はどうすればよいでしょうか? これを行うには -it オプションを使います。</p>
+<pre><code>docker container run -it alpine sh</code></pre>
+<p>sh は alpine コンテナの中にある /bin/sh コマンドを実行しています。 (alpine コンテナには /bin/bash シェルが無いため)</p>
+</section>
+<section id="チャレンジ-完璧な理解のための練習" class="slide level2">
+<h2>[チャレンジ] 完璧な理解のための練習</h2>
+<p><code>ubuntu</code> イメージからコンテナを作り、そのubuntuのバージョンを確認する方法を見つけてください。 また <code>apt-get</code> というコマンドを ubuntu コンテナ中で見つけてください。 <code>apt-get</code> というコマンドが見つかったら <code>--help</code> オプションを <code>apt-get</code> コマンドに渡してみてください。</p>
 </section></section>
 <section>
 <section id="docker-hub-1" class="title-slide slide level1 center">

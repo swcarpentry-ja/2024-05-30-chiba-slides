@@ -497,20 +497,6 @@
     "text": "[付箋で成功を確認] Docker イメージのダウンロード\nまず今持っている Docker イメージを確認します。\ndocker image ls\nインターネットからの hello-world イメージの取得\ndocker image pull hello-world"
   },
   {
-    "objectID": "docker/index.html#チャレンジ-hello-world-part-2-3分",
-    "href": "docker/index.html#チャレンジ-hello-world-part-2-3分",
-    "title": "SWC @ 千葉大学",
-    "section": "[チャレンジ] Hello World, Part 2 (3分)",
-    "text": "[チャレンジ] Hello World, Part 2 (3分)\nalpine コンテナを実行して、「hello world」メッセージを出力させることはできますか? それを実現するコマンドを提案してください。"
-  },
-  {
-    "objectID": "docker/index.html#付箋で成功を確認-コンテナを対話的に実行する",
-    "href": "docker/index.html#付箋で成功を確認-コンテナを対話的に実行する",
-    "title": "SWC @ 千葉大学",
-    "section": "[付箋で成功を確認] コンテナを対話的に実行する",
-    "text": "[付箋で成功を確認] コンテナを対話的に実行する\nコンテナを実行したままにしてログインし、さらに多くのコマンドを試用したい場合はどうすればよいでしょうか?\nこれを行うには -it オプションを使います。\ndocker container run -it alpine sh\nsh は alpine コンテナの中にある /bin/sh コマンドを実行しています。 (alpine コンテナには /bin/bash シェルが無いため)"
-  },
-  {
     "objectID": "docker/index.html#docker-hub",
     "href": "docker/index.html#docker-hub",
     "title": "SWC @ 千葉大学",
@@ -544,6 +530,27 @@
     "title": "SWC @ 千葉大学",
     "section": "[付箋で成功を確認] 自分が選んだコマンドを使ってコンテナを実行する",
     "text": "[付箋で成功を確認] 自分が選んだコマンドを使ってコンテナを実行する\nまずは コンテナを実行 (alpine というイメージで)\ndocker container run alpine\ncat /etc/os-release というコマンドを alpine イメージのコンテナで実行する。\ndocker container run alpine cat /etc/os-release"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジ-hello-world-part-2-3分",
+    "href": "docker/index.html#チャレンジ-hello-world-part-2-3分",
+    "title": "SWC @ 千葉大学",
+    "section": "[チャレンジ] Hello World, Part 2 (3分)",
+    "text": "[チャレンジ] Hello World, Part 2 (3分)\nalpine コンテナを実行して、「hello world」メッセージを出力させることはできますか? それを実現するコマンドを提案してください。"
+  },
+  {
+    "objectID": "docker/index.html#付箋で成功を確認-コンテナを対話的に実行しよう",
+    "href": "docker/index.html#付箋で成功を確認-コンテナを対話的に実行しよう",
+    "title": "SWC @ 千葉大学",
+    "section": "[付箋で成功を確認] コンテナを対話的に実行しよう",
+    "text": "[付箋で成功を確認] コンテナを対話的に実行しよう\nコンテナを実行したままにしてログインし、さらに多くのコマンドを試用したい場合はどうすればよいでしょうか? これを行うには -it オプションを使います。\ndocker container run -it alpine sh\nsh は alpine コンテナの中にある /bin/sh コマンドを実行しています。 (alpine コンテナには /bin/bash シェルが無いため)"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジ-完璧な理解のための練習",
+    "href": "docker/index.html#チャレンジ-完璧な理解のための練習",
+    "title": "SWC @ 千葉大学",
+    "section": "[チャレンジ] 完璧な理解のための練習",
+    "text": "[チャレンジ] 完璧な理解のための練習\nubuntu イメージからコンテナを作り、そのubuntuのバージョンを確認する方法を見つけてください。 また apt-get というコマンドを ubuntu コンテナ中で見つけてください。 apt-get というコマンドが見つかったら --help オプションを apt-get コマンドに渡してみてください。"
   },
   {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",

@@ -683,7 +683,7 @@
     "href": "docker/index.html#実際の-docker-の例を見て見ましょう",
     "title": "SWC @ 千葉大学",
     "section": "実際の Docker の例を見て見ましょう",
-    "text": "実際の Docker の例を見て見ましょう\n\nhttps://github.com/joelnitta/pleurosoriopsis\n\n一つのイメージで解析を再現する方法\n\nhttps://github.com/joelnitta/targets_vcf_example\n\n複数のイメージを組み込んだパイプライン\ndocker に加えて、conda が必要"
+    "text": "実際の Docker の例を見て見ましょう\n\nhttps://github.com/joelnitta/pleurosoriopsis\n\n一つのイメージで解析を再現する方法\n\nhttps://github.com/joelnitta/targets_vcf_example\n\n複数のイメージを組み込んだパイプライン\ndocker に加えて、conda が必要\n説明動画（英語）"
   },
   {
     "objectID": "shell/index.html#データの準備",

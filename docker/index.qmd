@@ -344,3 +344,4 @@ docker [action] [docker options] [docker container image] [command to run inside
 - <https://github.com/joelnitta/targets_vcf_example>
   - 複数のイメージを組み込んだパイプライン
   - docker に加えて、conda が必要
+  - [説明動画（英語）](https://www.joelnitta.com/ja/talks/2023-01-01_ropensci.ja)

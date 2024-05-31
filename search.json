@@ -497,18 +497,32 @@
     "text": "[付箋で成功を確認] Docker イメージのダウンロード\nまず今持っている Docker イメージを確認します。\ndocker image ls\nインターネットからの hello-world イメージの取得\ndocker image pull hello-world"
   },
   {
-    "objectID": "docker/index.html#チャレンジ-イメージを確認してみましょう",
-    "href": "docker/index.html#チャレンジ-イメージを確認してみましょう",
-    "title": "SWC @ 千葉大学",
-    "section": "[チャレンジ] イメージを確認してみましょう",
-    "text": "[チャレンジ] イメージを確認してみましょう\nhello-world Docker コンテナー イメージが正常にダウンロードされ、コンピューター上にあるかどうかを確認するには、どのコマンドを使用しますか? (解答を見る前に、これまでの知識を活かしてそれにチャレンジしてみてください。)"
-  },
-  {
     "objectID": "docker/index.html#docker-hub",
     "href": "docker/index.html#docker-hub",
     "title": "SWC @ 千葉大学",
     "section": "Docker Hub",
     "text": "Docker Hub\nどこから hello-world イメージはダウンロードされたのか？\nDocker Hub https://hub.docker.com/ からダウンロードされました。\n詳細については、後で (Joel さんが) 説明します。"
+  },
+  {
+    "objectID": "docker/index.html#チャレンジ-イメージを確認してみましょう-5分",
+    "href": "docker/index.html#チャレンジ-イメージを確認してみましょう-5分",
+    "title": "SWC @ 千葉大学",
+    "section": "[チャレンジ] イメージを確認してみましょう (5分)",
+    "text": "[チャレンジ] イメージを確認してみましょう (5分)\nhello-world Docker コンテナー イメージが正常にダウンロードされ、コンピューター上にあるかどうかを確認するには、どのコマンドを使用しますか? (解答を見る前に、これまでの知識を活かしてそれにチャレンジしてみてください。)"
+  },
+  {
+    "objectID": "docker/index.html#付箋で成功を確認-hello-world-コンテナの実行",
+    "href": "docker/index.html#付箋で成功を確認-hello-world-コンテナの実行",
+    "title": "SWC @ 千葉大学",
+    "section": "[付箋で成功を確認] hello-world コンテナの実行",
+    "text": "[付箋で成功を確認] hello-world コンテナの実行\nDocker イメージからコンテナを作成して実行するには、docker container run コマンドを使用します。\ndocker container run hello-world"
+  },
+  {
+    "objectID": "docker/index.html#今何があったの",
+    "href": "docker/index.html#今何があったの",
+    "title": "SWC @ 千葉大学",
+    "section": "今何があったの？",
+    "text": "今何があったの？\n\nコンテナを走らせた\nデフォルトのアクションを実行した\nコンテナをシャットダウンした"
   },
   {
     "objectID": "docker/index.html#docker-hubでコンテナを探す",
